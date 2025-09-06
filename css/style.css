@@ -1,0 +1,320 @@
+
+/* Section Banner */
+.sectionBanner img{border-radius: 20px;}
+/* Section Slider Banner */
+.sectionSliderBanner{margin:1.7rem 0;}
+.sectionSliderBanner-container{
+    position: relative;
+}
+.sectionSliderBanner .slide img{
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 15/4;
+}
+.sectionSliderBanner .dots-SliderBanner{
+    display: flex;
+    position: absolute;
+    bottom: 0rem;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 8px;
+    background: #fff;
+    padding:0.7rem 0.8rem 0.2rem 0.8rem;
+    border-radius: 50% 50% 0 0 ;
+}
+.sectionSliderBanner .dots-SliderBanner:after {
+ content: "";
+    position: absolute;
+    width: 37px;
+    height: 29px;
+    background: transparent;
+    bottom: -1px;
+    right: -1.9rem;
+    transform: rotate(90deg);
+    border-radius: 0 0 30px;
+    z-index: 1;
+    box-shadow: 16px 1px #fff;
+}
+.sectionSliderBanner .dots-SliderBanner:before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 25px;
+    background: transparent;
+    bottom: 0;
+    left: -2.8rem;
+    border-radius: 0 0 30px;
+    z-index: 1;
+    box-shadow: 9px 9px #fff;
+}
+.sectionSliderBanner .dots-SliderBanner div{
+    width: 9px;
+    height: 9px;
+    border-radius: 9px;
+    opacity: 0.2;
+    background: #6AA632;
+}
+.sectionSliderBanner .dots-SliderBanner div.active{opacity: 1;}
+.sectionSliderBanner .arrows-sliderBanner{
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+}
+.sectionSliderBanner .arrows-sliderBanner button{
+    position: relative;
+    top: 5px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+}
+.sectionSliderBanner .arrows-sliderBanner .prevBanner{
+    left: -1.5rem;
+}
+.sectionSliderBanner .arrows-sliderBanner .nextBanner{
+   right: -1.5rem;
+}
+@media (max-width:614.4px) {
+    .sectionSliderBanner .dots-SliderBanner{padding: 5px 10px;}
+    .sectionSliderBanner .dots-SliderBanner:after{bottom: -6px;}
+    .sectionSliderBanner .dots-SliderBanner::before{
+        width: 39px;
+        height: 25px;
+        bottom: -5px;
+        left: -2.3rem;
+        box-shadow: 3px 9px #fff;
+    }
+    .sectionSliderBanner .dots-SliderBanner{gap: 4px;}
+    .sectionSliderBanner .dots-SliderBanner div{width: 7px;height: 7px;}
+    .sectionSliderBanner .arrows-sliderBanner .nextBanner{right: -1rem;}
+    .sectionSliderBanner .arrows-sliderBanner .prevBanner{left: -1rem;}
+    .sectionSliderBanner .arrows-sliderBanner button{top: 0px;}
+   .sectionSliderBanner .arrows-sliderBanner button svg{width: 20px;height: 20px;}
+}
+/* Section Banners Style */
+.sectionBanners{margin-bottom: 70px;}
+.sectionBanners .fx-sectionBanners{gap: 1.5rem;}
+.sectionBanners .divImage{
+    aspect-ratio: 16/4;
+    flex: 1 1 calc(33.3% - 1.5rem);
+    max-width: calc(33.3% - 0px);
+}
+.sectionBanners .divImage img{width: 100%;object-fit: cover;border-radius: 10px;}
+@media (max-width:614.4px) {
+    .sectionBanners .fx-sectionBanners{gap: 0.5rem;}
+    .sectionBanners .divImage{
+        aspect-ratio: 16/4;
+        flex: 1 1 calc(100% - 0.5rem);
+        max-width: calc(100% - 0px);
+    }
+}
+/* End Section Banners Style */
+/* Section Featured Products Style */
+.featuredProducts{
+    padding: 50px 0 70px 0;
+    background: #F7F7F7;
+}
+.featuredProducts .divBanner{
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 0px);
+}
+.featuredProducts .divBanner img{width: 100%;object-fit: cover;border-radius: 20px;}
+.featuredProducts .titles{margin-bottom: 30px;gap: 10px;}
+.featuredProducts .fxProducts{margin-bottom: 50px;}
+.featuredProducts .listProducts{
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 0px);
+    gap: 14px;
+}
+.productItem{
+    aspect-ratio: 15/6;
+    border-radius: 10px;
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+    gap: 12px;
+}
+.productItem.active{
+    border-radius: 10px;
+    border: 1px solid var(--Color4, #6AA632);
+    background: #FFF;
+    box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+}
+.productItem .divImage{
+    width: 35%;
+    padding: 5px;
+    height: 100%;
+}
+.productItem .divImage img{object-fit: contain;}
+.productItem .fxProduct-price{gap: 2px;}
+.productItem .fxProduct-price p {
+    letter-spacing: -0.333px;
+    text-decoration-line: line-through;
+}
+.productItem .mount {
+    color: #000;
+    opacity: 0.3;
+}
+.productItem .fx-productItem{gap: 9px;}
+.productItem .fxIcons{gap: 12px;}
+.productItem .favouriteIcon.hidden{display: none;}
+.productItem .eye-icon,
+.productItem .toggle-icon,
+.productItem .shoppingCart-icon{
+    border: 1px solid #f2f2f2f2;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.productItem .eye-icon:hover,
+.productItem .toggle-icon:hover,
+.productItem .shoppingCart-icon:hover{
+    background: #6AA632;
+}
+.productItem .eye-icon:hover svg ,
+.productItem .toggle-icon:hover svg,
+.productItem .shoppingCart-icon:hover svg{
+      filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(7500%) hue-rotate(74deg) brightness(107%) contrast(101%);
+}
+.productItem .shoppingCart-icon{background: #6AA632;}
+@media (min-width:2048px) {
+    .featuredProducts .listProducts{
+        flex: 1 1 calc(25% - 28px);
+        max-width: calc(25% - 0px);
+        gap: 20px;
+    }
+    .featuredProducts .divBanner{
+        flex: 1 1 calc(25% - 28px);
+        max-width: calc(25% - 0px);
+    }
+}
+@media (max-width:1228.8px) {
+    .productItem .fxIcons{gap: 7px;}
+    .productItem .eye-icon,
+    .productItem .toggle-icon,
+    .productItem .shoppingCart-icon{padding: 6px;}
+    .productItem .eye-icon svg,
+    .productItem .toggle-icon svg,
+    .productItem .shoppingCart-icon svg{width: 15px;height: 15px;}
+}
+@media (max-width:1024px) {
+    .productItem .fxIcons{gap: 4px;}
+    .productItem .fxIcons{gap: 6px;}
+    .productItem .fx-productItem{gap: 5px;}
+    .featuredProducts .fxProducts{margin-bottom: 32px;gap: 15px;}
+    .featuredProducts .listProducts {
+        flex: 1 1 calc(25% - 15px);
+        max-width: calc(25.35% - 0px);
+    }
+    .featuredProducts .fxProducts .productCard {
+        flex: 1 1 calc(25% - 15px);
+        max-width: calc(25.35% - 0px);
+    }
+}
+@media (max-width:877.71px) {
+    .productItem .fxIcons{gap: 2px;}
+    .productItem .eye-icon svg,
+    .productItem .toggle-icon svg,
+    .productItem .shoppingCart-icon svg{width: 10px;height: 10px;}
+    .productItem .fx-productItem{gap: 3px;}
+    .featuredProducts .fxProducts .productCard {
+        flex: 1 1 calc(33.3% - 15px);
+        max-width: calc(33.3% - 0px);
+    }
+    .featuredProducts .fxProducts2 .divBanner{
+        flex: 1 1 calc(25% - 15px);
+        max-width: calc(25% - 0px);
+    }
+}
+@media (max-width:614.4px) {
+    .featuredProducts .fxProducts{margin-bottom: 24px;gap: 1rem;}
+    .featuredProducts .listProducts {
+        flex: 1 1 calc(100% - 1rem);
+        max-width: calc(100.35% - 0px);
+    }
+    .featuredProducts .divBanner{
+        flex: 1 1 calc(100% - 1rem);
+        max-width: calc(100% - 0px);
+    }
+    .featuredProducts .fxProducts2 .divBanner{
+        flex: 1 1 calc(100% - 1rem);
+        max-width: calc(100% - 0px);
+    }
+    .featuredProducts .fxProducts .productCard {
+        flex: 1 1 calc(100% - 1rem);
+        max-width: calc(100% - 0px);
+    }
+    .productItem{aspect-ratio: 15/2;}
+    .productItem .fx-productItem{gap: 11px;}
+    .productItem .fx-productItem .fontSize16{font-size: 15px;}
+    .productItem .fx-productItem .fontSize14{font-size: 13px;}
+    .featuredProducts .listProducts h3{font-size: 18px;}
+    .productItem .fxIcons{gap: 0.8rem;}
+    .productItem .eye-icon svg,
+    .productItem .toggle-icon svg,
+    .productItem .shoppingCart-icon svg {width: 20px;height: 20px;}
+    .productItem .eye-icon,
+    .productItem .toggle-icon,
+    .productItem .shoppingCart-icon{padding: 10px;}
+}
+/* End Section Featured Products Style */
+/* Section Banners 2 Style */
+.sectionBanners2{margin-bottom: 40px;}
+.sectionBanners2 .fx-sectionBanners2{gap: 40px;}
+.sectionBanners2 .fx-sectionBanners2 .divImage{
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 0px);
+}
+.sectionBanners2 .divImage{
+    aspect-ratio: 16/6.5;
+}
+@media (max-width:614.4px) {
+    .sectionBanners2 .fx-sectionBanners2{gap: 1rem;flex-direction: column;}
+    .sectionBanners2 .fx-sectionBanners2 .divImage{
+        flex: 1 1 calc(100% - 1rem);
+        max-width: calc(100% - 0px);
+    }
+}
+/* End Section Banners 2 Style */
+/* Section Folow Us Style */
+.folowUs{margin-bottom: 50px;}
+.folowUs h1{margin-bottom: 2rem;}
+.folowUs .fx-folowUs{gap: 1rem;}
+.folowUs .fx-folowUs .fxGeneral-card{
+    flex: 1 1 calc(16.6% - 1rem);
+    max-width: calc(16.6% - 0px);
+    position: relative;
+    aspect-ratio: 16/16;
+    border-radius: 10px;
+    height: 100%;
+}
+.folowUs .divImage{
+    position: absolute;
+    background: rgba(43, 87, 46, 0.8);
+    top: 0;
+    height: max-content;
+    left: 0;
+    opacity: 0;
+    border-radius: 10px;
+}
+.folowUs .fx-folowUs .fxGeneral-card img{   
+     aspect-ratio: 1/1;
+}
+.folowUs .fx-folowUs .fxGeneral-card:hover .divImage{opacity: 1;}
+@media (max-width:1024px) {
+    .folowUs h1{margin-bottom: 1rem;}
+}
+@media (max-width:614.4px) {
+    .folowUs .fx-folowUs{gap: 12px;}
+    .folowUs .fx-folowUs .fxGeneral-card{
+        flex: 1 1 calc(33.3% - 12px);
+        max-width: calc(33.3% - 12px);
+    }
+}
+@media (max-width:512px) {
+}
+/* Section Folow Us 2 Style */

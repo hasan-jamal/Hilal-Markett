@@ -1,0 +1,171 @@
+.divSort{position: relative;}
+.fx-sorting{gap: 20px;}
+ .btnSort {
+    border-radius: 26px;
+    border: 1px solid #DBDBDB;
+    background: #FFF;
+    display: inline-flex;
+    padding: 4px 15px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+ .listSorting {
+    display: none;
+    position: absolute;
+    gap: 0px;
+    flex-direction: column;
+    padding: 8px 0;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    z-index: 99;
+    background: #fff;
+    width: 100%;
+}
+ .fx-sorting .listSorting button {
+    background: none;
+    text-align: start;
+    transition: 0.3s;
+    padding: 8px 16px;
+    border-radius: 0px 0px 10px 10px;
+    background: #FFF;
+    width: 100%;
+}
+ .fx-orderDetails{
+    border-radius: 20px 20px 0px 0px;
+    background:#6DA117;
+    padding: 14px 20px 14px 20px;
+    width: max-content;
+    margin: auto;
+    gap: 15px;
+    width:100%;
+    margin: auto;
+    margin-bottom: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ .fx-orderDetails p{opacity: 0.8;}
+ .fx-orderDetails .border{
+    height: 60px;
+    width: 1px;
+    background: #FFF;
+    opacity: 0.4;
+}
+ .fx-orderDetails .downloadInvoice{
+    border-radius: 20px;
+    background: #FFF;
+    padding: 19px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width:1706.67px) {
+    .fx-orderDetails .downloadInvoice{height: 65px;padding:10px 23px;}
+    .btnSort{padding: 10px 16px;}
+}
+@media (min-width:1920px) {
+    .btnSort{padding: 10px 24px;}
+}
+@media (min-width:2048px) {
+}
+@media (min-width:2304px) {
+}
+@media (min-width:3072px) {
+}
+@media (max-width:1396.36px) {
+}
+@media (max-width:1228.8px) {
+     .fx-orderDetails .downloadInvoice{height: 50px;border-radius: 15px;}
+}
+@media (max-width:1024px) {
+    .fx-orderDetails .downloadInvoice{height: 45px;padding: 0 15px;}
+    .fx-orderDetails{margin-bottom: 20px;}
+}
+@media (max-width:877.71px) {
+     .fx-orderDetails{gap: 18px;padding: 10px 15px 10px 30px;}
+     .fx-orderDetails .downloadInvoice{height: 40px;}
+     .fx-orderDetails .border{height: 40px;}
+}
+@media (max-width:768px) {
+     .fx-orderDetails{flex-wrap: wrap;margin:0px auto 24px auto;}
+}
+@media (max-width:614.4px) {
+     .fx-orderDetails{flex-wrap: wrap;width:100%;margin:0px auto 24px auto;gap: 12px;}
+     .fx-orderDetails .fontSize20{font-size: 14px;}
+     .fx-orderDetails{padding: 10px;}
+     .fx-sorting{gap: 12px;}
+}
+@media (max-width:512px) {
+}
+ .boxProducts{
+    border-radius: 20px;
+    border: 2px solid #EDEDED;
+    background: #FFF;
+    margin-top: 30px;
+}
+.boxProducts .productsColumns{gap: 15px;}
+.boxProducts .productsColumns .fxDetails{
+    padding: 0 36px;
+}
+.boxProducts .productsColumns .fxDetails:last-child{
+    padding-bottom: 16px;
+}
+ .boxProducts .borderProduct{
+    height: 1px;
+    width: 95%;
+    background: #E1E0E0;
+    margin: auto;
+}
+.statusFx{gap: 10px;padding: 0 36px;}
+.statusFx .pickingItems{
+    color: #3C26B8;
+    background: #EBE9F8;
+    padding: 10px;
+    border-radius: 11px;
+}
+.statusFx .delivered{
+    color: #32B23A;
+    padding: 10px;
+    border-radius: 11px;
+    background: rgba(50, 178, 58, 0.10);
+}
+.fxButtons{gap: 30px;padding: 0 36px;margin-top: 20px;margin-bottom: 26px;}
+.fxButtons .btnLinear-gradient{padding: 0;}
+@media (min-width:1706.67px) {
+   .boxProducts .productsColumns .fxDetails,
+   .statusFx{padding:0 30px;}
+}
+@media (min-width:1920px) {
+    .boxProducts .productsColumns{gap: 20px;}
+}
+@media (max-width:1396.36px) {
+}
+@media (max-width:1228.8px) {
+    .boxProducts .productsColumns .fxDetails,
+    .statusFx{padding: 0px 18px;}
+}
+@media (max-width:1024px) {
+}
+@media (max-width:877.71px) {
+}
+@media (max-width:768px) {
+     .boxProducts h2{margin-bottom: 16px;}
+}
+@media (max-width:614.4px) {
+     .boxProducts .productsColumns{gap: 12px;}
+     .boxProducts .productsColumns .fxDetails,
+     .statusFx{padding: 0 16px;}
+     .boxProducts h2{font-size: 15px;}
+     .fxButtons .btnOutline-black{padding: 0;}
+     .fxButtons{gap: 15px;margin-top: 16px;}
+     .boxProducts{margin-top: 20px;}
+}
+  /* Box Quote Style */
+
+@media (max-width:614.4px) {
+    .fxHead h2{font-size: 20px;}
+    .statusFx .delivered{padding: 5px 10px;}
+}

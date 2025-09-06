@@ -1,0 +1,262 @@
+.sectionContact{
+    margin: 2rem 0 130px 0;
+}
+.sectionContact .divTitles{
+    gap: 2rem;
+}
+.sectionContact .divTitles img{aspect-ratio: 16/13;}
+.sectionContact .divTitles p{
+    width: 40%;
+    line-height: 140%;
+    margin: auto;
+}
+.sectionContact .fxContact{
+    border-radius: 24px;
+    border: 1px solid #EDF1F3;
+    background: #FFF;
+    box-shadow: 0 8px 7px 0 rgba(237, 241, 243, 0.25);
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    align-content: center;
+}
+.sectionContact .fxContact .partOne{
+    border-radius: 24px 0 0 24px;
+    background:#6AA632;
+    width:40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 72px;
+}
+.sectionContact .fxContact .partOne h2{
+    margin-bottom: 40px;
+}
+.sectionContact .fxContact .partOne .list-fxInformation{
+    gap: 1.5rem
+}
+.sectionContact .fxContact .partOne .divIcon{
+    border-radius: 152px;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 16px;
+}
+.sectionContact .fxContact .partOne .fxInformation{gap: 1rem;}
+.sectionContact .fxContact .partOne .fxInformation span{
+    opacity: 0.5;
+    margin-bottom: 6px;
+    display: block;
+}
+.sectionContact .fxContact .partOne .titleFollow{
+    margin-top: 54px;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+.sectionContact .fxContact .partOne .titleFollow .lineWhite{
+    width: 32px;
+    height: 1px;
+    background: #fff;
+}
+.sectionContact .fxContact .partOne .listMenus{
+    gap:0.5rem
+}
+.sectionContact .partTwo{
+    padding: 1.7rem 65px;
+    width: 60%;
+    display: flex;
+}
+.sectionContact .partTwo form label{
+    margin-bottom: 4.5px;
+    display: block;
+}
+.sectionContact .partTwo form{
+    gap: 1.2rem;
+}
+.sectionContact .partTwo form .w50{
+    flex: 1 1 calc(50% - 1.2rem);
+    max-width: calc(50% - 0px);
+}
+.sectionContact .partTwo form .w100{
+    flex: 1 1 calc(100% - 1.2rem);
+    max-width: calc(100% - 0px);
+}
+.sectionContact .partTwo .form-group textarea{
+    height: 95px;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid  #EDF1F3;
+    background:  #FFF;
+    box-shadow: 0 1px 2px 0 rgba(228, 229, 231, 0.24);
+}
+.phone-input-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 10px;
+    border: 1px solid #E9E9E9;
+    background: #FFF;
+    height: 45px;
+    padding: 0 14px;
+}
+.phone-input-container input{
+    background: none;
+    width: 80%;
+    border: none;
+}  
+.dropdown-phone-btn{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+} 
+.phone-input-container .dropdown-phone-list img,
+.flag-size{
+    width: 31.304px;
+    height: 22.174px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.phone-input-container .dropdown-phone-list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: max-content;
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+}
+.phone-input-container .dropdown-phone-btn {
+    cursor: pointer;
+}
+.phone-input-container .dropdown-phone-btn p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.phone-input-container .dropdown-phone-btn .arrow-down2{width: 15px;} 
+.phone-input-container .dropdown-phone-list p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #a5a5a5;
+}
+.phone-input-container .dropdown-phone-list p span{font-size: 16px;}
+.phone-input-container .dropdown-phone-list p:hover {background-color: #f0f0f0;}
+.phone-input-container .border-input{
+    height: 1.5rem;
+    width: 0.5px;
+    background: #072506;
+    opacity: 0.5;
+}
+.form-attachment #fxAttachment{gap: 14px;cursor: pointer;}
+.form-attachment .divIcon{
+ padding: 4px;
+ background: #F8F8F8;
+ border-radius: 50%;
+}
+.form-attachment .divText{gap: 6px;}
+.form-attachment .fxTitleFile .typFile{
+    padding: 12px 6px;
+     background: #F8F8F8;
+    border-radius: 50%;
+    font-size: 9px;
+}
+.form-attachment .listImages{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.form-attachment .fxTitleFile{
+    gap: 14px;
+}
+.form-attachment .btnDelete{
+    color: #A52A2A;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+@media (min-width:1706.67px) {
+    .phone-input-container{height: 70px;}
+    .sectionContact .divTitles{gap: 2.2rem;}
+}
+@media (min-width:1920px) {
+    .phone-input-container .dropdown-phone-list img, .flag-size{width: 36px;height: 28px;}
+    .sectionContact .divTitles{gap: 2.5rem;}
+}
+@media (min-width:2048px) {
+}
+@media (min-width:2304px) {
+
+}
+@media (min-width:3072px) {
+}
+@media (min-width:4608px) {
+}
+@media (min-width:6144px) {
+}
+@media (max-width:1396.36px) {
+    .sectionContact .fxContact .partOne{padding: 56px;}
+    .sectionContact .partTwo{padding: 1rem;padding: 56px;}
+    .phone-input-container{height: 42px;}
+    .sectionContact .divTitles p{width: 45%;}
+}
+@media (max-width:1228.8px) {
+    .sectionContact .fxContact .partOne{padding: 40px;}
+    .phone-input-container{height: 40px;padding: 10px;}
+    .phone-input-container .border-input{height: 25px;}
+    .sectionContact .fxContact .partOne .divIcon{padding: 10px;}
+    .sectionContact .fxContact .partOne .divIcon svg{width: 20px;height: 20px;}
+    .sectionContact .fxContact .partOne .listMenus img{width: 40px;}
+    .sectionContact .partTwo{padding: 40px;}
+    .sectionContact .divTitles p{width: 55%;}
+    .sectionContact .divTitles{gap: 1.5rem;}
+}
+@media (max-width:1024px) {
+    .sectionContact .fxContact .partOne{padding:2rem;}
+    .sectionContact .partTwo{padding: 2rem;}
+   .sectionContact .divTitles p{width: 75%;}
+   .sectionContact .divTitles{gap: 1rem;}
+}
+@media (max-width:877.71px) {
+    .sectionContact .fxContact .partOne{padding:1.5rem;}
+    .sectionContact .partTwo{padding: 1.5rem;}
+    .sectionContact .fxContact{width: 90%;}
+    .sectionContact .partTwo form{gap: 12px;}
+    .sectionContact .partTwo form .w50 {
+        flex: 1 1 calc(100% - 12px);
+        max-width: calc(100% - 0px);
+    }
+    .sectionContact .fxContact .partOne h2{margin-bottom: 2rem;}
+    .phone-input-container .dropdown-phone-list img, .flag-size{width: 20px;height: 100%;}
+    .sectionContact .divTitles p{width: 85%;}
+}
+@media (max-width:768px) {
+    .sectionContact .fxContact .partOne{padding:1rem;}
+    .sectionContact .partTwo{padding:1rem}
+    .sectionContact .fxContact{width: 95%;}
+    .sectionContact .fxContact .partOne h2{margin-bottom: 1.5rem;}    
+}
+@media (max-width:614.4px) {
+    .phone-input-container{padding: 0 10px;height: 45px;}
+    .phone-input-container .border-input{height: 27px;}
+    .phone-input-container .dropdown-phone-list img, .flag-size{width: 25px;height: 18px;}
+    .phone-input-container .dropdown-phone-list p span{font-size: 12px;}
+    .phone-input-container .dropdown-phone-list{padding: 6px;}
+    .phone-input-container input{font-size: 13px;}
+     .sectionContact .divTitles p{width: 100%;}
+     .sectionContact .fxContact{width: 95%;flex-direction: column;gap: 1.5rem;}
+     .sectionContact .fxContact .partOne{width: 100%;padding: 2rem;border-radius: 1.5rem;order: 2;}
+     .sectionContact .fxContact .partOne .fxInformation{gap: 0.5rem;}
+     .sectionContact .fxContact .partTwo{width: 100%; order: 1;}
+     .sectionContact .partTwo form{gap: 1.2rem;}
+     .sectionContact .partTwo form label{font-size: 13px;}
+     .sectionContact .divTitles img{aspect-ratio: 16/10;}
+     .sectionContact{margin-bottom: 3rem;}
+}
+@media (max-width:512px) {
+}

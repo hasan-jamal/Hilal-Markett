@@ -1,0 +1,147 @@
+/* Manage Address Page */
+.manageAddress .titles{
+    width: 50%;
+    margin-bottom: 50px;
+}
+.manageAddress form .form__group{
+    margin-bottom: 30px;
+    gap: 20px;
+    border-radius: 20px;
+    border: 2px solid #EDEDED;
+    background: #FFF;
+    padding: 16px 24px;
+}
+.manageAddress .form__radio-input {
+	 display: none;
+}
+.manageAddress .form__radio-label {
+	 display: flex;
+	 justify-content: start;
+	 align-items: center;
+	 gap: 10px;
+	 cursor: pointer;
+}
+ .manageAddress .form__radio-button {
+	 height: 18px;
+	 width: 18px;
+	 border: 1px solid #6DA117;
+     background: #fff;
+	 border-radius: 50%;
+	 display: inline-block;
+	 position: absolute;
+	 transform: translateY(-2px);
+     right: 1rem;
+}
+.manageAddress .form__radio-button::after {
+	 content: "";
+	 display: block;
+	 height:8px;
+	 width:8px;
+	 position: absolute;
+	 border-radius: 50%;
+	 top: 50%;
+	 left: 50%;
+	 transition: opacity 0.1s;
+	 transform: translate(-50%, -50%);
+	 background-color: #6DA117;
+	 opacity: 0;
+}
+.manageAddress  .form__radio-input:checked + .form__radio-label .form__radio-button{
+    border: 1px solid #6DA117;
+     background: #fff;
+}
+.manageAddress  .form__radio-input:checked + .form__radio-label .form__radio-button:after {
+	 opacity: 1;
+}
+.manageAddress .locationRow{
+    padding-bottom: 20px;
+    position: relative;
+    padding-right: 4rem;
+    border-bottom: 1px solid #E1E0E0;
+}
+.manageAddress .locationRow:last-child{border-bottom: 0;padding-bottom: 0;}
+.manageAddress .buttons button{
+    background: rgba(53, 53, 53, 0.1);
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+/* manage Address Style */
+.manageAddress h2{margin-bottom: 24px;}
+.manageAddressStyle .listInputs{
+    margin-top: 24px;
+    width: 100%;
+    gap: 20px;
+}
+.manageAddressStyle .listInputs .btnLinear-gradient{
+    margin-top: 10px;
+    width: 208px;
+    border-radius: 20px;
+}
+.manageAddressStyle .w50{
+    flex: 1 1 calc(50% - 1.2rem);
+    max-width: calc(50% - 1.2rem);
+}
+.manageAddressStyle .w100{
+    flex: 1 1 calc(100% - 1.2rem);
+    max-width: calc(100% - 0px);
+}
+.manageAddressStyle .form-group{gap: 11px;}
+@media (min-width:1706.67px) {
+    .manageAddressStyle .listInputs .btnLinear-gradient{width: 230px;}
+}
+@media (min-width:1920px) {
+    .manageAddressStyle .listInputs .btnLinear-gradient{width: max-content;}
+    .manageAddressStyle .listInputs .btnLinear-gradient svg{width: 30px;height: 30px;}
+    .manageAddress .form__radio-button{
+        width: 24px;
+        height: 24px;
+    }
+    .manageAddress .form__radio-button::after{width: 12px;height: 12px;}
+    .manageAddress .form__radio-label h4{line-height: 30px;}
+    .manageAddress h2{margin-bottom: 30px;}
+    .manageAddressStyle .listInputs{margin-top: 30px;}
+}
+@media (max-width:1396.36px) {
+}
+@media (max-width:1228.8px) {
+}
+@media (max-width:614.4px) {
+}
+@media (min-width:1706.67px) {
+
+}
+@media (min-width:1920px) {
+}
+@media (min-width:2048px) {
+}
+@media (max-width:1228.8px) {
+    .manageAddressStyle .listInputs .btnLinear-gradient{width: 170px;}
+}
+@media (max-width:1024px) {
+    .manageAddressStyle .listInputs .btnLinear-gradient{width: 140px;}
+    .manageAddress h2{margin-bottom: 20px;}
+    .manageAddressStyle .listInputs{margin-top: 20px;}
+}
+@media (max-width:877.71px) {
+    .manageAddressStyle .listInputs .btnLinear-gradient{width: 120px;}
+
+}
+@media (max-width:614.4px) {
+    .manageAddressStyle .listInputs .btnLinear-gradient{width: 140px;margin-top: 0px;}
+     .manageAddress .form__radio-label .fontSize20{font-size: 15px;}
+    .manageAddress form .form__group{padding: 16px;}
+    .manageAddress h2{margin-bottom: 16px;}
+    .manageAddressStyle .listInputs{margin-top: 16px;}
+    .manageAddressStyle .w50{
+        flex: 1 1 calc(100% - 1.2rem);
+        max-width: calc(100% - 1.2rem);
+    }
+    .manageAddress .titles{width: 100%;margin-bottom: 1.5rem;}
+    .manageAddress .locationRow{padding-right: 2rem;}
+    .manageAddress .form__radio-button{right: 0rem;}
+    .manageAddress .buttons button svg{width: 15px;height: 15px;}
+    .manageAddress .buttons button{padding: 5px 7px;}
+    .manageAddressStyle .form-group{gap: 7px;}
+    .locationSvg{width: 20px;height: 20px;}
+    .manageAddress .form__radio-label{gap: 10px;}
+}

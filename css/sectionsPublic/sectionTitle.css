@@ -1,0 +1,46 @@
+.sectionTitle{
+   background-image: url(../../hilalImages/Breadcrumbs-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 20/2;
+    height: 100%;
+}
+.sectionTitle .sectionTitle-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+}
+.sectionTitle .fx-sectionTitle{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.sectionTitle .fx-LinksTitle{gap: 12px;}
+.sectionTitle a{
+    text-decoration: none;
+}
+@media (min-width:1706.67px) {
+}
+@media (min-width:1920px) {
+}
+@media (min-width:2048px) {
+}
+@media (max-width:1228.8px) {
+}
+@media (max-width:1024px) {
+    .sectionTitle svg{width: 8px;height: 8px;}
+    .sectionTitle .fx-LinksTitle{gap: 6px;}
+    
+}
+@media (max-width:877.71px) {
+    .sectionTitle .fx-sectionTitle{width: 65%;}
+}
+@media (max-width:614.4px) {
+    .sectionTitle{aspect-ratio: 20/5;}
+    .sectionTitle .fx-sectionTitle{width: 100%;flex-direction: column;gap: 0.6rem;}
+    .sectionTitle .fx-LinksTitle{order: 2;}
+}

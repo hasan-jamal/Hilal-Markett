@@ -1,0 +1,104 @@
+/* Profile Style */
+.profileStyle{
+    width: 488px;
+    border: 1px solid  #E6E6E6;
+    background: #FFF;
+    padding: 1.6rem 40px;
+    width: 100%;
+    border-radius: 8px; 
+}
+
+.profileStyle form{
+    gap: 1.2rem;
+}
+.profileStyle form .form-group{
+    gap:12px;
+}
+.profileStyle form .w50{
+    flex: 1 1 calc(50% - 1.2rem);
+    max-width: calc(50% - 1.2rem);
+}
+.profileStyle form .w100{
+    flex: 1 1 calc(100% - 1.2rem);
+    max-width: calc(100% - 0px);
+}
+.profileStyle .changeImageProfile{
+    position: relative;
+    width: max-content;
+    align-items: center;
+    display: flex;
+    gap: 1.9rem;
+    margin-bottom: 10px;
+}
+.profileStyle .changeImageProfile .profileImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    object-fit: cover;
+}
+.profileStyle .changeImageProfile .selectImage{
+    background: none;
+    height: max-content;
+    border-radius: 43px;
+    border: 2px solid #6AA632;
+    background: #FFF;
+    padding: 14px 32px;
+}
+.profileStyle form .btnLinear-gradient{
+    margin-top: 10px;
+    width: 161px;
+    height: 45px;
+}
+
+.list-boxInput span{cursor: pointer;transition: 0.2s;}
+.list-boxInput span:hover{font-weight: 500;transform: scale(1.01);}
+@media (min-width:1706.67px) {
+    .dropdown-phone-btn{gap: 8px;}
+    .profileStyle .changeImageProfile .profileImage{width: 160px;height: 160px;}
+}
+@media (min-width:1920px) {
+    .profileStyle .changeImageProfile .profileImage{width: 180px;height: 180px;}
+
+}
+@media (max-width:1396.36px) {
+    .profileStyle .changeImageProfile .selectImage{padding: 12px 30px;}
+}
+@media (max-width:1228.8px) {
+    .profileStyle .changeImageProfile .selectImage{padding: 8px 1.5rem}
+}
+@media (min-width:1706.67px) {
+    .profileStyle .changeImageProfile .profileImage{ width: 170px;height: 170px;}
+    .profileStyle form .btnLinear-gradient{width: 220px;height: 70px;}
+}
+@media (min-width:1920px) {
+    .profileStyle .changeImageProfile .profileImage{ width: 200px;height: 200px;}
+    .profileStyle form .btnLinear-gradient{width: 250px;height:75px;border-radius: 30px;}
+}
+@media (min-width:2048px) {
+    .profileStyle form .btnLinear-gradient{width: 280px;}
+}
+@media (max-width:1228.8px) {
+    .profileStyle form .btnLinear-gradient{height: 50px;}
+    .profileStyle{padding: 20px 2rem;}
+}
+@media (max-width:1024px) {
+    .profileStyle form .btnLinear-gradient{height: 45px;width: 170px;}
+    .profileStyle{padding: 1rem 1.5rem;}
+}
+@media (max-width:877.71px) {
+    .profileStyle{width: 90%;}
+    .profileStyle{padding: 1rem;}
+    .profileStyle form{gap: 1rem;}
+    .profileStyle form .form-group{ gap:6px;}
+    .profileStyle form .w50{
+        flex: 1 1 calc(100% - 1rem);
+        max-width: calc(100% - 0rem);
+    }
+    .profileStyle form .btnLinear-gradient {height: 40px;width: 140px;}
+}
+@media (max-width:614.4px) {
+    .profileStyle{width: 100%;}
+    .userPage .tabsList .tabButton{border-radius: 0;}
+    .profileStyle .changeImageProfile .profileImage{ width: 120px;height: 120px;margin-bottom: 0;}
+
+}

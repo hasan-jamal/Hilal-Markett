@@ -1,0 +1,128 @@
+.userPage{margin: 90px 0;}
+.userPage .fx-userPage{gap: 50px;}
+.userPage .tabsList{
+    gap: 20px;
+    width: 26%;
+    display: flex;
+    border-radius: 8px;
+    border: 1px solid #E6E6E6;
+    background: #FFF;
+    padding: 1.5rem 0;
+}
+.userPage .tabsList h2{padding: 0 1.5rem;}
+.userPage .tabsList .tabButton{
+    background: #FFF;
+    padding:1rem 2rem;
+    gap: 10px;
+    align-items: center;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+.userPage .tabsList .tabButton svg{
+  filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(56%) hue-rotate(314deg) brightness(85%) contrast(92%);
+}
+.userPage .tabsList .tabButton:hover{
+    transform: scale(1.03);
+    background: #EDF2EE;
+    box-shadow: 3px 0 0 0 #6AA632 inset;
+}
+.userPage .tabsList .tabButton:hover span,
+.userPage .tabsList .tabButton.active span{
+    color: #1A1A1A;
+}
+.userPage .tabsList .tabButton:hover svg,
+.userPage .tabsList .tabButton.active svg{
+    filter: brightness(0) saturate(100%) invert(9%) sepia(9%) saturate(91%) hue-rotate(314deg) brightness(101%) contrast(98%);
+}
+.userPage .tabsList .tabButton.active{
+    background: #EDF2EE;
+    box-shadow: 3px 0 0 0 #6AA632 inset;
+}
+.userPage .userPage-content{
+    width: 74%;
+}
+.userPage .userPage-content .fxFilterBtn{width: 80%;gap: 8px;}
+.userPage .userPage-content .fxFilterBtn svg{width: 24px;color: #fff;}
+.btnTabs{
+    display: none;
+    align-items: center;
+    padding: 0 20px;
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border-radius: 8px;
+    border: 1px solid #d1d1d1;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    background-color: #6DA117;
+}
+.btnTabs span{text-transform: capitalize;font-size: 15px;color: #fff;}
+.btnTabs img{transform: rotate(0deg);filter: brightness(0) invert(1);}
+.btnTabs:hover{transform: scale(0.98);}
+.fxHead-btns{
+    display: flex;
+    margin-bottom:16px;
+    align-items: center;
+}
+.fxHead-btns button{
+    display: none;
+    border-radius: 50%;
+    background: #6AA632;
+    padding: 5px;
+    justify-content: center;
+    justify-content: center;
+}
+.fxHead-btns button img{width: 14px;}
+@media (min-width:1706.67px) {
+    .userPage .tabsList .tabButton{height: 78px;}
+}
+@media (min-width:1920px) {
+    .userPage .tabsList .tabButton{height: 84px;padding: 0 30px;}
+    .userPage .tabsList .tabButton img{width: 36px;}
+}
+@media (min-width:2048px) {
+}
+@media (max-width:1396.36px) {
+    .userPage .tabsList .tabButton{height: 65px;}
+}
+@media (max-width:1228.8px) {
+.userPage .tabsList{gap: 16px;}
+.userPage .fx-userPage{gap: 32px;}
+}
+@media (max-width:1024px) {
+.userPage .tabsList .tabButton{height: 55px;gap: 12px;}
+.userPage .tabsList .tabButton img{width: 22px;}
+.userPage{margin: 60px 0;}
+}
+@media (max-width:877.71px) {
+    .userPage .tabsList {width: 30%;gap: 12px;}
+    .userPage .userPage-content{width: 70%;}
+    .userPage .tabsList .tabButton{border-radius: 15px;}
+    .userPage .tabsList .tabButton span{font-size: 14px;}
+    .userPage .tabsList .tabButton img{width: 18px;}
+    .userPage .fx-userPage{gap: 24px;}
+}
+@media (max-width:614.4px) {
+    .userPage .tabsList{display: none;}
+    .userPage .userPage-content{width: 100%;}
+    .userPage{margin: 50px 0;}
+    .btnTabs{
+        display:flex;
+    }
+    #tabsListSide{
+        height: 100vh;
+        position: fixed;
+        overflow-y: auto;
+        width: 100%;
+        background: #fff;
+        padding: 30px 24px;
+        top: 0;
+        left: 0;
+        z-index: 99999;
+    }
+    #tabsListSide .tabButton{width: 100%;padding: 20px;}
+    .userPage .tabsList .tabButton span{font-size: 16px;}
+    .fxHead-btns button{display: flex;}
+    .fxHead-btns h2{font-size: 20px;}
+}
+@media (max-width:512px) {
+}
