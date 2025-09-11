@@ -1,22 +1,29 @@
 .contantTexts h2{
-    font-size: 30px;
-    margin-bottom: 22px;
+       margin-bottom: 22px;
 }
 .contantTexts p{
-    font-size: 22px;
-    color: rgba(0, 0, 0, 0.50);
+    color: #222835;
     white-space:initial;
+    opacity: 0.8;
     padding-bottom: 30px;
     display: block;
+    white-space: pre-line;
 }
-.contantTexts img{margin-bottom: 30px;}
+.contantTexts p b{
+    color: rgba(0, 0, 0, 1);
+    padding: 10px 0;
+    opacity: 1;
+    display: inline-block;
+};
+.contantTexts p b br{display: none !important;}
+.contantTexts .logoHilalMarket{
+    margin-bottom: 1.5rem;
+    width: 50%;
+    display: block;
+}
 @media (min-width:1706.67px) {
- .contantTexts p{font-size: 25px;}
-.contantTexts h2{font-size: 33px;}
 }
 @media (min-width:1920px) {
- .contantTexts p{font-size: 27px;}
-.contantTexts h2{font-size: 36px;}
 }
 @media (min-width:2048px) {
 
@@ -31,23 +38,24 @@
 
 }
 @media (max-width:1228.8px) {
-.contantTexts p{padding-bottom: 20px;font-size: 18px;}
+    
+    .contantTexts p{padding-bottom: 20px;}
 }
 @media (max-width:1024px) {
-.contantTexts img{margin-bottom: 20px;}
-.contantTexts p{padding-bottom: 20px;font-size: 16px;}
-.contantTexts h2{margin-bottom: 16px; font-size: 24px;}
+.contantTexts .logoHilalMarket{margin-bottom: 1rem;}
+    .contantTexts p{padding-bottom: 20px;}
+    .contantTexts h2{margin-bottom: 16px; }
 }
 @media (max-width:877.71px) {
-.contantTexts h2{margin-bottom: 16px; font-size: 20px;}
+    .contantTexts h2{margin-bottom: 16px;}
 }
 @media (max-width:768px) {
 
 }
 @media (max-width:614.4px) {
-.contantTexts img{margin-bottom: 16px;}
-.contantTexts p{padding-bottom: 16px;font-size: 14px;}
-.contantTexts h2{margin-bottom: 14px;}
+.contantTexts .logoHilalMarket{margin-bottom: 12rem;}
+    .contantTexts p{padding-bottom: 16px;}
+    .contantTexts h2{margin-bottom: 14px;}
 }
 @media (max-width:512px) {
 }

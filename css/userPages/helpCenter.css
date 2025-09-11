@@ -1,40 +1,4 @@
 .helpCenter{position: relative;}
-.helpCenter .tabsDiv{
-    gap: 30px;
-    border-bottom: 1.5px solid #C7C7C7;
-}
-.helpCenter .tabsDiv .tabLink button{
-    background: none;
-    top: 1px;
-    transition: 0.1s;
-    position: relative;
-}
-.helpCenter .tabsDiv .tabLink.active button,
-.helpCenter .tabsDiv .tabLink button:hover{
-    color: #6DA117;
-}
-.helpCenter .tabsDiv .tabLink.active button::after {
-    content: '';
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background-color: #6DA117; /*  color */
-    transform-origin: left;
-    animation: underlineGrow 0.3s ease-out forwards;
-}
-.helpCenter .contentTab {
-    display: none;
-    opacity: 0;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-.helpCenter .contentTab.active {
-    display: block;
-    opacity: 1;
-    transform: translateY(0);
-}   
 @keyframes underlineGrow {
     0% {
         transform: scaleX(0);
@@ -45,7 +9,6 @@
 }
 .helpCenter .filterTabs .filterTabs-names{
     gap: 15px;
-    margin-top: 85px;
 }
 .helpCenter .filterTabs .filterTab{
     color: #5A5555;
@@ -63,6 +26,7 @@
 .helpCenter .filterTabs .filterTab.active{
     color: #FFF;
     background: #6DA117;
+    font-weight: 600;
 }
 .helpCenter .faq-item{
     border-bottom: 1px solid rgba(0, 0, 0, 0.30);
@@ -144,6 +108,7 @@
  .helpCenter .filterTabs .filterTab{width: 140px;}
  .helpCenter .faq-item:first-child{padding-top: 50px;}
  .helpCenter .faq-item{padding: 40px 0;}
+  .helpCenter .faq-item .faq-title{margin-bottom: 1.2rem;}
  .helpCenter .faq-item .faq-title img{width: 20px;}
     .helpCenter .complaintTicket .box-complaintTicket .btnCancel{width: 230px;height: 60px;}
     .helpCenter .commentImages img {height: 140px;    flex: 1 1 calc(20% - 15px);max-width: calc(20% - 0px);}
@@ -166,7 +131,6 @@
     .helpCenter .faq-item:first-child{padding-top: 25px;}
     .helpCenter .faq-item{padding: 20px 0;}
     .helpCenter .filterTabs .filterTab{width: 80px;}
-    .helpCenter .filterTabs .filterTabs-names{margin-top: 60px;}
     .helpCenter .boxSettings .boxSettings-content img{width: 30px;height: 30px;}
      .helpCenter .boxSettings .boxSettings-content{gap: 20px;}
      .helpCenter .complaintTicket .box-complaintTicket .btnCancel{width: 150px;height: 45px;}
@@ -182,7 +146,6 @@
 }
 @media (max-width:768px) {
  .helpCenter .filterTabs .filterTabs-names{flex-wrap: wrap;}
- .helpCenter .filterTabs .filterTabs-names{margin-top: 40px;}
 }
 @media (max-width:614.4px) {
     .helpCenter .boxs{margin-top: 40px;}

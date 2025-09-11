@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hilaal Market</title>
-    <link rel="shortcut icon" href="../images/karootoBlack.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="../hilalImages/logo.svg" type="image/x-icon" />
     <!---Style CSS-->
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/userPages/userPage.css">
-    <link rel="stylesheet" href="../css/userPages/myOrders.css">
-    <link rel="stylesheet" href="../css/sectionsPublic/sectionFeatures.css">
+    <link rel="stylesheet" href="../css/userPages/helpCenter.css">
+
+
+    <link rel="stylesheet" href="../css/sectionsPublic/sectionSubcribe.css">
     <link rel="stylesheet" href="../css/sectionsPublic/sectionTitle.css">
     <link rel="stylesheet" href="../css/footer.css">
     <!-- AOS Animation CSS -->
@@ -1997,13 +1999,13 @@
                 </div>
             </div>
             <div class="linksHeader d-flex">
-                <a href="./index.html" class="fontSize12 style-font btn-hover active colorBlack">Home</a>
-                <a href="./shop.html" class="fontSize12 style-font btn-hover colorBlack">Shop</a>
-                <a href="./latestOffers.html" class="fontSize12 style-font btn-hover colorBlack">Latest
+                <a href="./index.html" class="fontSize16 style-font btn-hover active colorBlack">Home</a>
+                <a href="./shop.html" class="fontSize16 style-font btn-hover colorBlack">Shop</a>
+                <a href="./latestOffers.html" class="fontSize16 style-font btn-hover colorBlack">Latest
                     Offers</a>
-                <a href="./bestSellers.html" class="fontSize12 style-font btn-hover colorBlack">Best Sellers</a>
-                <a href="./newsProducts.html" class="fontSize12 style-font btn-hover colorBlack">New Products</a>
-                <a href="./contactUs.html" class="fontSize12 style-font btn-hover colorBlack">Contact Us</a>
+                <a href="./bestSellers.html" class="fontSize16 style-font btn-hover colorBlack">Best Sellers</a>
+                <a href="./newsProducts.html" class="fontSize16 style-font btn-hover colorBlack">New Products</a>
+                <a href="./contactUs.html" class="fontSize16 style-font btn-hover colorBlack">Contact Us</a>
 
             </div>
         </div>
@@ -2020,7 +2022,7 @@
                         </svg>
                         <a href="" class="font-medium colorWhite fontSize14">Account</a>
                     </div>
-                    <h1 class="text-center font-bold colorWhite  text-capitalize fontSize30    ">My Orders</h1>
+                    <h1 class="text-center font-bold colorWhite  text-capitalize fontSize30    ">FAQ</h1>
                 </div>
             </div>
         </section>
@@ -2049,7 +2051,7 @@
                             <span class=" style-font fontSize16 text-capitalize colorGrey8">My account</span>
                         </button>
                         <button type="button" onclick="window.location.href='myOrders.html'"
-                            class="d-flex align-items-center tabButton active">
+                            class="d-flex align-items-center tabButton">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                 fill="none">
                                 <path
@@ -2085,7 +2087,7 @@
                             <span class=" style-font fontSize16 text-capitalize colorGrey8">Manage Address</span>
                         </button>
                         <button type="button" onclick="window.location.href='paymentMethods.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                 fill="none">
                                 <path
@@ -2099,7 +2101,7 @@
                             <span class=" style-font fontSize16 text-capitalize colorGrey8">Payment Methods</span>
                         </button>
                         <button type="button" onclick="window.location.href='myCoupons.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                 fill="none">
                                 <path
@@ -2126,7 +2128,7 @@
                             <span class=" style-font fontSize16 text-capitalize colorGrey8">Settings </span>
                         </button>
                         <button type="button" onclick="window.location.href='FAQ.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton active">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                 fill="none">
                                 <path
@@ -2219,35 +2221,374 @@
                             </div>
                             <img src="../images/arrowLeftDark.svg" alt="arrow">
                         </div>
-                        <div class="myOrders">
-                            <h2 class="colorBlack4 fontSize20 font-semiBold mb-2">Order History</h2>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th class="text-uppercase fontSize12 colorBlack6 font-medium">
-                                            Order ID</th>
-                                        <th class="text-uppercase fontSize12 colorBlack6 font-medium">Date</th>
-                                        <th class="text-uppercase fontSize12 colorBlack6 font-medium">Total</th>
-                                        <th class="text-uppercase fontSize12 colorBlack6 font-medium">Status</th>
-                                        <th class="text-uppercase fontSize12 colorBlack6 font-medium">Order Type</th>
-                                        <th></th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="colorBlack5 style-font fontSize14 ">#3933</td>
-                                        <td class="colorBlack5 style-font fontSize14">4 April, 2025</td>
-                                        <td class>$135.00 (5 Products)</td>
-                                        <td>Processing</td>
-                                        <td>Delivered</td>
-                                        <td>Cancel Order</td>
-                                        <td>View Details</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="helpCenter">
+                            <div class="filterTabs">
+                                <div class="filterTabs-names d-flex">
+                                    <button class="filterTab fontSize18  style-font active" id="all">All</button>
+                                    <button class="filterTab fontSize18 style-font" id="services">Services</button>
+                                    <button class="filterTab fontSize18  style-font" id="general">General</button>
+                                    <button class="filterTab fontSize18  style-font" id="account">Account</button>
+                                    <button class="filterTab fontSize18  style-font" id="payment">Payment</button>
+                                </div>
+                                <div class="filterTabs-Contants">
+                                    <div class="contantTab" data-id="all">
+                                        <div class="list-faq-items">
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="1">
+                                                    <span class="fontSize18 font-bold colorBlack3">Officia maiores ut
+                                                        et quia
+                                                        laborum ea.
+                                                        Non qui
+                                                        aliquam ut
+                                                        hic rerum totam et ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="1">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="2">
+                                                    <span class="fontSize18 font-bold colorBlack3">Ut sed quia vel
+                                                        animi est excepturi. In natus assumenda id qui totam.
+                                                        ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="2">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="3">
+                                                    <span class="fontSize18 font-bold colorBlack3">Aliquid error
+                                                        quidem quae quae autem nesciunt nam. Eaque assumenda magni
+                                                        officiis. ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="3">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="4">
+                                                    <span class="fontSize18 font-bold colorBlack3">Sunt et
+                                                        perspiciatis. Quisquam eos in vero ea quam quia doloremque
+                                                        quia possimus. ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="4">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="5">
+                                                    <span class="fontSize18 font-bold colorBlack3">In natus aut est.
+                                                        Vitae eligendi sunt est. Labore quia exercitationem id.
+                                                        ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="5">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="6">
+                                                    <span class="fontSize18 font-bold colorBlack3">Non eveniet
+                                                        ratione. Quae et animi et quo nulla vel quae. Quam numquam
+                                                        deleniti. ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="6">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contantTab" data-id="services">
+                                        <div class="list-faq-items">
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="4">
+                                                    <span class="fontSize18 font-bold colorBlack3">Sunt et
+                                                        perspiciatis. Quisquam eos in vero ea quam quia doloremque
+                                                        quia possimus. ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="4">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="5">
+                                                    <span class="fontSize18 font-bold colorBlack3">In natus aut est.
+                                                        Vitae eligendi sunt est. Labore quia exercitationem id.
+                                                        ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="5">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="6">
+                                                    <span class="fontSize18 font-bold colorBlack3">Non eveniet
+                                                        ratione. Quae et animi et quo nulla vel quae. Quam numquam
+                                                        deleniti. ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="6">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contantTab" data-id="general">
+                                        <div class="list-faq-items">
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="1">
+                                                    <span class="fontSize18 font-bold colorBlack3">Officia maiores ut
+                                                        et quia
+                                                        laborum ea.
+                                                        Non qui
+                                                        aliquam ut
+                                                        hic rerum totam et ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="1">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="2">
+                                                    <span class="fontSize18 font-bold colorBlack3">Ut sed quia vel
+                                                        animi est excepturi. In natus assumenda id qui totam.
+                                                        ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="2">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="3">
+                                                    <span class="fontSize18 font-bold colorBlack3">Aliquid error
+                                                        quidem quae quae autem nesciunt nam. Eaque assumenda magni
+                                                        officiis. ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="3">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="4">
+                                                    <span class="fontSize18 font-bold colorBlack3">Sunt et
+                                                        perspiciatis. Quisquam eos in vero ea quam quia doloremque
+                                                        quia possimus. ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="4">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="5">
+                                                    <span class="fontSize18 font-bold colorBlack3">In natus aut est.
+                                                        Vitae eligendi sunt est. Labore quia exercitationem id.
+                                                        ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="5">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="6">
+                                                    <span class="fontSize18 font-bold colorBlack3">Non eveniet
+                                                        ratione. Quae et animi et quo nulla vel quae. Quam numquam
+                                                        deleniti. ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="6">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contantTab" data-id="account">
+                                        <div class="list-faq-items">
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="1">
+                                                    <span class="fontSize18 font-bold colorBlack3">Officia maiores ut
+                                                        et quia
+                                                        laborum ea.
+                                                        Non qui
+                                                        aliquam ut
+                                                        hic rerum totam et ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="1">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="contantTab" data-id="payment">
+                                        <div class="list-faq-items">
+                                            <div class="faq-item">
+                                                <div class="faq-title d-flex align-items-center justify-content-between"
+                                                    data-index="1">
+                                                    <span class="fontSize18 font-bold colorBlack3">Officia maiores ut
+                                                        et quia
+                                                        laborum ea.
+                                                        Non qui
+                                                        aliquam ut
+                                                        hic rerum totam et ?</span>
+                                                    <img src="../images/plus-faq.svg" alt="arrow" class="icon">
+                                                </div>
+                                                <div class="faq-content" data-index="1">
+                                                    <p class="mb-0 fontSize16 style-font colorBlack3">Dolores quia
+                                                        quia sit facere est vero nesciunt. Et et eveniet
+                                                        temporibus vel quasi rerum enim ea vitae. Qui non quo
+                                                        aliquam iusto ipsa sit quasi explicabo. Quis repellendus
+                                                        molestias itaque pariatur id ab ab. Occaecati quos
+                                                        voluptatum
+                                                        unde velit deleniti ipsa cum quae. Consequatur placeat
+                                                        architecto.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-
                     </div>
                 </div>
             </div>
@@ -2384,11 +2725,57 @@
     <script>AOS.init();</script>
     <!-- Btn Tabs JS -->
     <script src="../js/userPages/btnTabs.js"></script>
-    <!-- Sort Button JS -->
-    <script src="../js/dropdowns/sortButton.js"></script>
-    <!-- Modal Js -->
-    <script src="../js/modals/reOrderModal.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            $('.tabLink').click(function () {
+                const tabId = $(this).attr('id');
+                $('.tabLink').removeClass('active');
+                $('.contentTab').removeClass('active');
+                $(this).addClass('active');
+                $(`.contentTab[data-tab="${tabId}"]`).addClass('active');
+            });
+            $('.contentTab[data-tab="tabOne"]').addClass('active');
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".faq-item").click(function () {
+                const index = $(this).find(".faq-title").data("index");
+
+                $(this).toggleClass("active");
+
+                const img = $(this).find(".faq-title img");
+                if ($(this).hasClass("active")) {
+                    img.attr("src", "../images/min-faq.svg");
+                } else {
+                    img.attr("src", "../images/plus-faq.svg");
+                }
+                $(`.faq-content[data-index=${index}]`).slideToggle(300);
+
+                $(".faq-item").not(this).removeClass("active").find(".faq-title img").attr("src", "../images/plus-faq.svg");
+                $(".faq-content").not(`.faq-content[data-index=${index}]`).slideUp(300);
+            });
+        });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".filterTab").on("click", function () {
+                var selectedTab = $(this).attr("id");
+
+                $(".filterTab").removeClass("active");
+                $(this).addClass("active");
+
+                $(".contantTab").hide();
+                $('.contantTab[data-id="' + selectedTab + '"]').show();
+            });
+
+            $(".contantTab").hide();
+            $('.contantTab[data-id="all"]').show();
+        });
+
+    </script>
 </body>
 
 </html>

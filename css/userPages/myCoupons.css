@@ -1,25 +1,41 @@
 .myCoupons .listMyCoupons{
     gap: 20px;
+    row-gap: 40px;
 }
-.myCoupons .boxCoupon .boxCoupon-texts{padding: 10px;}
-.myCoupons h2{
+.myCoupons .boxCoupon{
+    border-radius: 10px;
+    border: 1px solid #EDF1F3;
+    background: #FFF;
+    box-shadow: 0 1px 2px 0 rgba(228, 229, 231, 0.24);
+    flex: 1 1 calc(33.3% - 20px);
+    max-width: calc(33.3% - 0px);
+}
+.boxCoupon-texts{padding: 10px;}
+.myCoupons .boxCoupon h3{
     margin-bottom: 10px;
 }
 .myCoupons .boxCoupon .fx-boxCoupon{
-    margin-top: 10px;
+    margin: 20px 0;
     gap: 8px;
     align-items: center;
 }
 .myCoupons .boxCoupon button{
     border-radius: 0px 0px 10px 10px;
     background: #F3F3F3;
-    height: 48px;
+    height: 40px;
     transition: 0.2s;
+    margin-top: 10px;
+    gap: 12px;
 }
 .myCoupons .boxCoupon button:hover{
     transform: scale(0.98);
     background-color: #6DA117;
+}
+.myCoupons .boxCoupon button:hover span{
     color: #F3F3F3;
+}
+.myCoupons .boxCoupon button:hover svg{
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
 }
 @media (min-width:1706.67px) {
     .myCoupons .boxCoupon button{height: 57px;}
@@ -30,14 +46,31 @@
     .myCoupons .listMyCoupons{gap:32px;}
 }
 @media (max-width:1024px) {
-.myCoupons .boxCoupon button{height: 42px;}
+    .myCoupons .boxCoupon button{height: 38px;}
+    .myCoupons .boxCoupon button svg{width: 15px;height: 15px;}
+    .myCoupons .listMyCoupons{gap: 1rem;row-gap: 1.8rem;}
+    .myCoupons .boxCoupon{
+            flex: 1 1 calc(33.3% - 1rem);
+            max-width: calc(33.3% - 0px);
+    }
+    .myCoupons .boxCoupon .fx-boxCoupon{margin: 14px 0;}
+    .myCoupons .boxCoupon .fx-boxCoupon svg{width: 20px;height: 20px;gap: 4px;}
 }
 @media (max-width:877.71px) {
-.myCoupons .boxCoupon button{height: 38px;}
+    .myCoupons .listMyCoupons{row-gap: 1.2rem;}
+    .myCoupons .boxCoupon button{height: 38px;}
+    .myCoupons .boxCoupon{
+        flex: 1 1 calc(50% - 1rem);
+        max-width: calc(50% - 0px);
+    }
 }
 @media (max-width:614.4px) {
     .fontSize15{font-size: 13px;}
     .fontSize20{font-size: 16px;}
     .fontSize25{font-size: 20px;}
     .myCoupons .listMyCoupons{gap: 16px;}
+    .myCoupons .boxCoupon{
+        flex: 1 1 calc(100% - 1rem);
+        max-width: calc(100% - 0px);
+    }
 }

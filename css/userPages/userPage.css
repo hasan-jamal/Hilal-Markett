@@ -1,13 +1,13 @@
 .userPage{margin: 90px 0;}
 .userPage .fx-userPage{gap: 50px;}
 .userPage .tabsList{
-    gap: 20px;
     width: 26%;
     display: flex;
     border-radius: 8px;
     border: 1px solid #E6E6E6;
     background: #FFF;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0 0 0;
+    height: 100%;
 }
 .userPage .tabsList h2{padding: 0 1.5rem;}
 .userPage .tabsList .tabButton{
@@ -46,7 +46,7 @@
     display: none;
     align-items: center;
     padding: 0 20px;
-    height: 50px;
+    height: 44px;
     width: 100%;
     background: transparent;
     border-radius: 8px;
@@ -73,31 +73,27 @@
 }
 .fxHead-btns button img{width: 14px;}
 @media (min-width:1706.67px) {
-    .userPage .tabsList .tabButton{height: 78px;}
+    .userPage .tabsList .tabButton{padding: 1.5rem 2.4rem;gap: 14px;}
 }
 @media (min-width:1920px) {
-    .userPage .tabsList .tabButton{height: 84px;padding: 0 30px;}
-    .userPage .tabsList .tabButton img{width: 36px;}
-}
-@media (min-width:2048px) {
+    .userPage .tabsList .tabButton{padding: 1.5rem 2.4rem;gap: 1rem;}
+    .userPage .tabsList .tabButton svg{width: 36px;height: 36px;}
 }
 @media (max-width:1396.36px) {
-    .userPage .tabsList .tabButton{height: 65px;}
+    .userPage .tabsList .tabButton{padding: 0.8rem 1.8rem;}
 }
 @media (max-width:1228.8px) {
-.userPage .tabsList{gap: 16px;}
-.userPage .fx-userPage{gap: 32px;}
+    .userPage .fx-userPage{gap: 32px;}
+    .userPage .tabsList .tabButton{padding: 0.8rem 1.6rem;}
 }
 @media (max-width:1024px) {
-.userPage .tabsList .tabButton{height: 55px;gap: 12px;}
-.userPage .tabsList .tabButton img{width: 22px;}
-.userPage{margin: 60px 0;}
+    .userPage .tabsList .tabButton{gap: 8px;padding: 0.8rem 1.3rem;}
+    .userPage .tabsList .tabButton svg{width: 18px;height: 18px;}
+    .userPage{margin: 60px 0;}
 }
 @media (max-width:877.71px) {
-    .userPage .tabsList {width: 30%;gap: 12px;}
+    .userPage .tabsList {width: 30%;}
     .userPage .userPage-content{width: 70%;}
-    .userPage .tabsList .tabButton{border-radius: 15px;}
-    .userPage .tabsList .tabButton span{font-size: 14px;}
     .userPage .tabsList .tabButton img{width: 18px;}
     .userPage .fx-userPage{gap: 24px;}
 }
@@ -120,9 +116,10 @@
         z-index: 99999;
     }
     #tabsListSide .tabButton{width: 100%;padding: 20px;}
-    .userPage .tabsList .tabButton span{font-size: 16px;}
+    #tabsListSide .tabButton span{font-size: 15px;}
     .fxHead-btns button{display: flex;}
     .fxHead-btns h2{font-size: 20px;}
+ 
 }
 @media (max-width:512px) {
 }

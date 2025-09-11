@@ -1,10 +1,10 @@
 $(document).ready(function () {
   $("#deleteModalBtn").click(function () {
-    $(".overlay, .deleteModal").fadeIn();
+    $(".overlayModal, .deleteModal").fadeIn();
     $("body").css("overflow-y", "hidden");
   });
 
-  $(".overlay,#cancelDeleteModal").click(function () {
-    $(".overlay, .deleteModal").fadeOut();
+  $(".overlayModal,.cancelDeleteModal").click(function () {
+    $(".overlayModal, .deleteModal").fadeOut();
   });
 });

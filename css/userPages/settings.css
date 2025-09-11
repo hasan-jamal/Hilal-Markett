@@ -3,7 +3,7 @@
     border-radius: 10px;
     background: #F9F9F9;
     border: 1.5px solid #EDEDED;
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -55,6 +55,7 @@ input:checked + .switch:active::before {
 .deleteModal{
     padding: 25px 0px 0px 0px;
     position: fixed;
+    width: 30%;
     border-radius: 20px;
     background: #FFF;
     z-index: 9999;
@@ -65,13 +66,22 @@ input:checked + .switch:active::before {
     display: none;
     overflow-y: auto;
 }
+.deleteModal .fxTitles{
+    padding-bottom: 1rem;
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid #E1E0E0;
+}
 .deleteModal img{
-    width: 135px;
-    height: 135px;
+    width: 115px;
+    height: 115px;
     display: block;
     margin:10px auto;
 }
-.deleteModal p{margin-bottom: 38px;}
+.deleteModal p{
+    margin-bottom: 38px;
+    width: 70%;
+}
 .deleteModal .fxButtons{
     gap: 21px;
     border-radius: 0px 0px 10px 10px;
@@ -79,55 +89,61 @@ input:checked + .switch:active::before {
     box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.05);
     padding: 25px 32px;width: 100%;
 }
-
-.deleteModal button{
+.deleteModal .fxButtons button{
     border-radius: 10px;
-    width: 210px;
-    height: 55px;
+    width: 50%;
+    height: 48px;
     padding: 0;
     font-size: 15px;
 }
+.deleteModal .fxButtons .btnRed{
+    border-radius: 40px;
+    background: #A52A2A;
+}
+.deleteModal .fxButtons .btnOutline-black{
+    border-radius: 40px;
+    border: 1px solid var(--Color3, #222835);
+}
 @media (min-width:1706.67px) {
-.deleteModal button{font-size: 17px; width: 230px;height: 65px;}
-.settingsDiv .boxSettings{padding: 20px;}
+    .deleteModal .fxButtons button{height: 55px;font-size: 16px;}
+    .settingsDiv .boxSettings{padding: 20px;}
 }
 @media (min-width:1920px) {
-.deleteModal button{font-size: 20px; width: 250px;height: 70px;}
+    .deleteModal .fxButtons button{ height: 65px;font-size: 19px;}
 }
 @media (min-width:2048px) {
-
-}
-@media (min-width:2304px) {
-
-}
-@media (min-width:3072px) {
-
+    .deleteModal{width: 600px;}
 }
 @media (max-width:1396.36px) {
-
+.settingsDiv .boxSettings .boxSettings-content img{width: 45px;height: 45px;}
+.deleteModal .fxTitles{padding-bottom: 12px;}
+.deleteModal{width: 35%;}
 }
 @media (max-width:1228.8px) {
 .settingsDiv .boxSettings .boxSettings-content img{width: 40px;height: 40px;}
+.deleteModal{width: 40%;}
 }
 @media (max-width:1024px) {
-.settingsDiv .boxSettings .boxSettings-content img{width: 30px;height:30px;}
+    .deleteModal .fxTitles{padding-bottom: 10px;}
 }
 @media (max-width:877.71px) {
-    .deleteModal p{margin-bottom: 24px;}
-    .deleteModal button{width:160px; height: 40px;font-size: 13px;}
+    .deleteModal p{margin-bottom: 1rem;width: 90%;}
+    .settingsDiv .boxSettings .boxSettings-content img{width: 38px;height:38px;}
     .settingsDiv .boxSettings{margin-bottom: 20px;}
-}
-@media (max-width:768px) {
-
+    .deleteModal .fxTitles{padding-bottom: 6px;}
+    .deleteModal{width: 60%;}
 }
 @media (max-width:614.4px) {
-    .deleteModal{width: 90%;overflow: hidden;}
+    .deleteModal{width: 90%;overflow: hidden;padding-top: 5px;}
+    .deleteModal .fxTitles{padding-bottom: 0px;}
     .deleteModal .fxButtons{padding: 10px 24px;gap: 12px;}
     .deleteModal p{margin-bottom: 24px;}
-    .deleteModal button{width: 50%; height: 40px;font-size: 13px;}
+    .deleteModal button{height: 40px;font-size: 13px;}
     .settingsDiv .boxSettings{margin-bottom: 14px;}
     .switch{height: 25px;width: 40px;}
     input:checked + .switch::before{left: 20px;}
+    .deleteModal .fxButtons button{font-size: 12px;height: 42px;}
+    .deleteModal img {width: 90px;height: 90px;}
 }
 @media (max-width:512px) {
 }

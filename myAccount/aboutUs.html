@@ -6,19 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hilaal Market</title>
-    <link rel="shortcut icon" href="../images/karootoBlack.svg" type="image/x-icon" />
+    <link rel="shortcut icon" href="../hilalImages/logo.svg" type="image/x-icon" />
     <!---Style CSS-->
     <link rel="stylesheet" href="../css/general.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/userPages/userPage.css">
-    <link rel="stylesheet" href="../css/userPages/profile.css">
+    <link rel="stylesheet" href="../css/userPages/contentTexts.css">
 
     <link rel="stylesheet" href="../css/sectionsPublic/sectionSubcribe.css">
     <link rel="stylesheet" href="../css/sectionsPublic/sectionTitle.css">
-
     <link rel="stylesheet" href="../css/footer.css">
-    <!-- AOS Animation CSS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -1999,13 +1996,13 @@
                 </div>
             </div>
             <div class="linksHeader d-flex">
-                <a href="./index.html" class="fontSize12 style-font btn-hover active colorBlack">Home</a>
-                <a href="./shop.html" class="fontSize12 style-font btn-hover colorBlack">Shop</a>
-                <a href="./latestOffers.html" class="fontSize12 style-font btn-hover colorBlack">Latest
+                <a href="./index.html" class="fontSize16 style-font btn-hover active colorBlack">Home</a>
+                <a href="./shop.html" class="fontSize16 style-font btn-hover colorBlack">Shop</a>
+                <a href="./latestOffers.html" class="fontSize16 style-font btn-hover colorBlack">Latest
                     Offers</a>
-                <a href="./bestSellers.html" class="fontSize12 style-font btn-hover colorBlack">Best Sellers</a>
-                <a href="./newsProducts.html" class="fontSize12 style-font btn-hover colorBlack">New Products</a>
-                <a href="./contactUs.html" class="fontSize12 style-font btn-hover colorBlack">Contact Us</a>
+                <a href="./bestSellers.html" class="fontSize16 style-font btn-hover colorBlack">Best Sellers</a>
+                <a href="./newsProducts.html" class="fontSize16 style-font btn-hover colorBlack">New Products</a>
+                <a href="./contactUs.html" class="fontSize16 style-font btn-hover colorBlack">Contact Us</a>
 
             </div>
         </div>
@@ -2022,7 +2019,7 @@
                         </svg>
                         <a href="" class="font-medium colorWhite fontSize14">Account</a>
                     </div>
-                    <h1 class="text-center font-bold colorWhite  text-capitalize fontSize30    ">My account</h1>
+                    <h1 class="text-center font-bold colorWhite  text-capitalize fontSize30    ">about us</h1>
                 </div>
             </div>
         </section>
@@ -2035,7 +2032,7 @@
                             <button class="btnClose"><img src="../images/cancel-icon.svg" alt="cancel icon"></button>
                         </div>
                         <button type="button" onclick="window.location.href='profile.html'"
-                            class="d-flex align-items-center tabButton active">
+                            class="d-flex align-items-center tabButton ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                 fill="none">
                                 <path
@@ -2087,7 +2084,7 @@
                             <span class=" style-font fontSize16 text-capitalize colorGrey8">Manage Address</span>
                         </button>
                         <button type="button" onclick="window.location.href='paymentMethods.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                 fill="none">
                                 <path
@@ -2101,7 +2098,7 @@
                             <span class=" style-font fontSize16 text-capitalize colorGrey8">Payment Methods</span>
                         </button>
                         <button type="button" onclick="window.location.href='myCoupons.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                 fill="none">
                                 <path
@@ -2128,7 +2125,7 @@
                             <span class=" style-font fontSize16 text-capitalize colorGrey8">Settings </span>
                         </button>
                         <button type="button" onclick="window.location.href='FAQ.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                 fill="none">
                                 <path
@@ -2144,7 +2141,7 @@
                             <span class=" style-font fontSize16 text-capitalize colorGrey8">FAQ</span>
                         </button>
                         <button type="button" onclick="window.location.href='privacyPolicy.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton ">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                 fill="none">
                                 <path
@@ -2162,7 +2159,7 @@
                             <span class=" style-font fontSize16 text-capitalize colorGrey8">privacy policy</span>
                         </button>
                         <button type="button" onclick="window.location.href='aboutUs.html'"
-                            class="d-flex align-items-center tabButton">
+                            class="d-flex align-items-center tabButton active">
                             <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24"
                                 fill="none">
                                 <path
@@ -2221,92 +2218,89 @@
                             </div>
                             <img src="../images/arrowLeftDark.svg" alt="arrow">
                         </div>
-                        <div class="profileStyle">
-                            <form action="" class="fxGeneral-cards">
-                                <div class="changeImageProfile w100 fxGeneral-card">
-                                    <img src="../images/userImage.png" alt="profile Image" class="profileImage">
-                                    <button type="button"
-                                        class="btn-hover selectImage colorGreen fontSize14 font-semiBold">
-                                        Chose Image
-                                    </button>
-                                    <input type="file" id="fileInput" accept="image/*" style="display: none;">
-                                </div>
-                                <div class="form-group d-flex flex-column w50 fxGeneral-card">
-                                    <label for="fullName"
-                                        class="font-medium fontSize14 text-capitalize colorBlack3 ">Full
-                                        name
-                                        *</label>
-                                    <input type="text" class="input-public style-font fontSize12"
-                                        placeholder=" Enter your Full name" id="fullName" name="fullName">
-                                </div>
-                                <div class="form-group d-flex flex-column w50 fxGeneral-card">
-                                    <label for="email"
-                                        class="font-medium fontSize14 text-capitalize colorBlack3 ">E-mail
-                                        *</label>
-                                    <input type="email" class="input-public style-font fontSize12"
-                                        placeholder=" Enter your E-mail" id="email" name="email">
-                                </div>
-                                <div class="form-group d-flex flex-column w50 fxGeneral-card">
-                                    <label for="gender"
-                                        class="font-medium fontSize14 text-capitalize colorBlack3 ">Gender
-                                        *</label>
-                                    <div class="DivList">
-                                        <div class="boxInput">
-                                            <input type="text" class="input-public style-font fontSize12"
-                                                placeholder=" Select your Gender " id="gender" name="gender" readonly>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path d="M15.8333 7.08301L9.99996 12.9163L4.16663 7.08301"
-                                                    stroke="#191818" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        <div class="list-boxInput">
-                                            <span class="fontSize12 style-font ">Male</span>
-                                            <span class="fontSize12 style-font ">Female</span>
-                                        </div>
-                                    </div>
-                                </div>
+                        <div class="contantTexts">
+                            <img src="../hilalImages/logo-AboutUs.svg" alt="logo hilal market" class="logoHilalMarket"
+                                style="
+                                    margin-bottom: 1.5rem;
+                                    width: 50%;
+                                    display: block;
+">
+                            <h2 class="fontSize25  text-capitalize  font-bold colorBlack6">about us Hilal Market</h2>
+                            <p class="mb-0 style-font fontSize18">Welcome to Hilal Grocery – your trusted partner in
+                                everyday shopping.
+                                At Hilal Grocery, we believe that getting your daily essentials shouldn't be a chore.
+                                That's why we built a platform
+                                that brings fresh, high-quality groceries and household products directly to your
+                                doorstep – quickly, conveniently, and
+                                reliably.
+                                Our journey began with a simple idea: to make grocery shopping easier for everyone. In
+                                today’s fast-paced world, time is
+                                more valuable than ever. Long queues, traffic, and crowded aisles can make a simple
+                                grocery trip unnecessarily
+                                stressful. We decided to change that by offering a smarter, simpler way to shop – from
+                                the comfort of your home, office,
+                                or anywhere you may be.
+                                From fresh fruits and vegetables to dairy, meat, bakery items, beverages, and personal
+                                care products – Hilal Grocery
+                                offers a wide selection to meet all your daily needs. Every item on our platform is
+                                carefully selected to ensure
+                                quality, freshness, and value. Whether you're stocking up for the week or just grabbing
+                                a few last-minute items, we make
+                                sure you get what you need, when you need it.
+                                We are more than just a delivery service. We are a team of dedicated professionals who
+                                care deeply about your
+                                satisfaction. Our customer support team is always ready to help, and our delivery
+                                drivers are trained to handle every
+                                order with care and punctuality. At Hilal Grocery, every customer is important, and
+                                every order matters.
+                                Our app is designed with your convenience in mind. With a user-friendly interface, smart
+                                search, and secure checkout,
+                                placing an order takes just a few taps. You can track your delivery in real time and
+                                receive updates every step of the
+                                way. We also offer flexible payment options and frequent promotions to give you even
+                                more value.
+                                As a local business, we take pride in supporting our community. We work closely with
+                                local suppliers and farms to bring
+                                you the best products while helping small businesses grow. We are committed to
+                                sustainability and reducing waste through
+                                efficient packaging and responsible sourcing.
+                                Hilal Grocery is more than just an app – it’s a lifestyle solution tailored to modern
+                                living. Whether you're a busy
+                                parent, a working professional, or someone who simply values convenience, we’re here to
+                                make your life easier, one
+                                delivery at a time.
+                                Thank you for choosing Hilal Grocery. We’re honored to serve you and excited to grow
+                                with you. Your trust drives us to
+                                do better every day.
+                                Freshness. Convenience. Trust. That’s the Hilal promise
 
-                                <div class="form-group d-flex flex-column w50">
-                                    <label for="dateOfBirth" class="font-medium fontSize14 text-capitalize colorBlack3">
-                                        Date of Birth
-                                    </label>
+                                Nesciunt explicabo eius accusamus sint quaerat atque ut. Quo perferendis quasi vel
+                                dolores. Ut reprehenderit a. Fugiat
+                                voluptatum accusantium. Dolorem reprehenderit pariatur veritatis alias voluptatem a
+                                reprehenderit harum. Aspernatur enim
+                                est maxime et dicta quae.
 
-                                    <div class="boxInput " style="position: relative;">
-                                        <input type="time" class="input-public style-font fontSize12 w-100"
-                                            id="dateOfBirth" name="dateOfBirth" placeholder="Select the Date of Birth ">
-                                    </div>
-                                </div>
-                                <div class="form-group d-flex flex-column w50 fxGeneral-card">
-                                    <label for="city" class="font-medium fontSize14 text-capitalize colorBlack3 ">City
-                                        *</label>
-                                    <div class="DivList">
-                                        <div class="boxInput">
-                                            <input type="text" class="input-public style-font fontSize12"
-                                                placeholder=" Select your City" id="city" name="city" readonly>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                                viewBox="0 0 20 20" fill="none">
-                                                <path d="M15.8333 7.08301L9.99996 12.9163L4.16663 7.08301"
-                                                    stroke="#191818" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round" />
-                                            </svg>
-                                        </div>
-                                        <div class="list-boxInput">
-                                            <span class="style-font fontSize12 ">Mogadishu</span>
-                                            <span class="fontSize12 style-font ">Bossaso</span>
-                                            <span class="fontSize12 style-font ">Hargeisa</span>
-                                        </div>
-                                    </div>
-                                </div>
+                                Quae ipsam possimus placeat nisi. Corrupti velit animi qui provident amet quis. Minus id
+                                non necessitatibus corrupti
+                                voluptas natus omnis sint. Porro aut sequi. Maxime necessitatibus maiores quo cupiditate
+                                culpa. Asperiores similique
+                                maiores aut.
+                                Et aperiam facere omnis consequuntur nihil suscipit necessitatibus. Inventore voluptas
+                                quos incidunt quis sunt non et
+                                distinctio. Iste qui facere exercitationem sit et in incidunt est distinctio.
 
-                                <div class="form-goup w-100 fxGeneral-card">
-                                    <button type="button" id="UpdateProfile"
-                                        class="colorWhite fontSize14 font-semiBold btnLinear-gradient btn-hover">Save
-                                        Changes</button>
-                                </div>
-                            </form>
-
+                                Nesciunt explicabo eius accusamus sint quaerat atque ut. Quo perferendis quasi vel
+                                dolores. Ut reprehenderit a. Fugiat
+                                voluptatum accusantium. Dolorem reprehenderit pariatur veritatis alias voluptatem a
+                                reprehenderit harum. Aspernatur enim
+                                est maxime et dicta quae.
+                                Legend speaks of an ancient civilization that once thrived on Illusion, possessing
+                                knowledge and technology far beyond
+                                their time. They are said to have harnessed the power of the island's unique energy
+                                field to create a society of
+                                unparalleled harmony and prosperity. However, a cataclysmic event, perhaps a volcanic
+                                eruption or a devastating tsunami,
+                                is believed to have brought about their sudden demise.</p>
                         </div>
                     </div>
                 </div>
@@ -2444,10 +2438,6 @@
     <script>AOS.init();</script>
     <!-- Btn Tabs JS -->
     <script src="../js/userPages/btnTabs.js"></script>
-    <!-- Select Image JS -->
-    <script src="../js/userPages/selectImage.js"></script>
-    <!-- Box Input JS -->
-    <script src="../js/dropdowns/boxInput.js"></script>
 </body>
 
 </html>

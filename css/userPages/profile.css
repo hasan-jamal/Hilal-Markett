@@ -98,7 +98,6 @@
 }
 @media (max-width:614.4px) {
     .profileStyle{width: 100%;}
-    .userPage .tabsList .tabButton{border-radius: 0;}
     .profileStyle .changeImageProfile .profileImage{ width: 120px;height: 120px;margin-bottom: 0;}
 
 }

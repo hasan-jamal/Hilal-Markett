@@ -1,0 +1,385 @@
+.boxAuth{
+    margin: 1.7rem auto;
+    border-radius: 8px;
+    border: 1px solid  #F2F2F2;
+    background:  #FFF;
+    box-shadow: 0 0 56px 0 rgba(0, 38, 3, 0.08);
+    padding:2rem 1.5rem ;
+}
+.boxLogin{width: 35%;}
+.boxAuth .fxButtons{
+    gap: 15px;
+    margin: 1.2rem 0 1rem 0;
+}
+.boxAuth .fxButtons button{
+    padding: 12px 0;
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #EFF0F6;
+    background:  #FFF;
+    gap: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 -3px 6px 0 rgba(244, 245, 250, 0.60) inset;
+}
+.boxAuth .fxButtons button:hover{
+    background:  #efefef;
+}
+.boxAuth .fxTitle{
+    gap: 12px;
+    margin: 2rem 0;
+}
+.boxAuth .fxTitle .line{width: 42%;height: 1px;background: #EDF1F3;}
+.boxAuth .fxTitle span{width: 16%;text-align: center;}
+  /* phone input */
+.form-group{width: 100%;}
+.phone-input-container{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 10px;
+    border: 1px solid #E9E9E9;
+    background: #FFF;
+    height: 55px;
+    padding: 0 20px;
+}
+.phone-input-container input{
+    background: none;
+    width: 80%;
+    border: none;
+}  
+.dropdown-phone-btn{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+} 
+.dropdown-phone-btn span{font-size: 13px;}
+.phone-input-container .dropdown-phone-list img,
+.flag-size{
+    width: 31.304px;
+    height: 22.174px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.phone-input-container .dropdown-phone-list {
+    display: none;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    width: max-content;
+    z-index: 1;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 10px;
+}
+.phone-input-container .dropdown-phone-btn {
+    cursor: pointer;
+}
+.phone-input-container .dropdown-phone-btn p{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.phone-input-container .dropdown-phone-btn .arrow-down2{width: 15px;} 
+.phone-input-container .dropdown-phone-list p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
+    cursor: pointer;
+    border-bottom: 1px solid #a5a5a5;
+}
+.phone-input-container .dropdown-phone-list p span{
+    font-size: 16px;
+}
+.phone-input-container .dropdown-phone-list p:hover {
+    background-color: #f0f0f0;
+}
+.phone-input-container .border-input{
+    height: 1.5rem;
+    width: 0.5px;
+    background: #072506;
+    opacity: 0.5;
+}
+.checkbox-group{margin: 1.2rem 0;}
+.btnAuth{
+    border-radius: 43px;
+    transition: all 0.3s ease-in-out;
+    background: linear-gradient(90deg, #6AA632 0.22%,  #B9DE60 103.8%);
+}
+.btnAuth:hover{
+    box-shadow: 0 4px 15px 0 rgba(106, 166, 50, 0.40);
+}
+.boxAuth .bottomText{margin-top: 20px;}
+.boxAuth .non-decoration{text-decoration: none;}
+/* Complete Your Profile */
+.completeYourProfile{
+    width: 35%;
+    margin: 1.2rem auto;
+}
+.completeYourProfile .titles{
+    gap: 0.5rem;
+}
+.completeYourProfile .boxAuth-container{
+    gap: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.completeYourProfile .boxAuth-container form{gap: 1.2rem;}
+.completeYourProfile form .form-group{
+    gap: 0.5rem ;
+}
+.completeYourProfile .imgGroup{
+    border-radius: 10px;
+    border: 1px solid #EDF1F3;
+    background:  #FFF;
+    gap: 10px;
+    padding: 14px;
+    box-shadow: 0 1px 2px 0 rgba(228, 229, 231, 0.24);
+}
+.completeYourProfile .divImage{
+    border-radius: 5px;
+    background: linear-gradient(180deg, var(--Color5, #B9DE60) 0%, var(--Color4, #6AA632) 100%);
+    padding:6px;
+}
+.completeYourProfile .divText p{font-size: 8px;}
+.completeYourProfile .profileImage {
+    display: none;
+    max-width: 80px;
+    border-radius: 5px;
+}
+@media (max-width:1228.8px) {
+    .completeYourProfile,
+    .boxLogin{width: 40%;}
+}
+@media (max-width:1024px) {
+    .completeYourProfile,
+    .boxLogin{width: 45%;}
+}
+@media (max-width:877.71px) {
+    .completeYourProfile,
+    .boxLogin{width: 50%;}
+}
+@media (max-width:768px) {
+    .completeYourProfile,
+    .boxLogin{width: 55%;}
+}
+@media (max-width:614.4px) {
+ .completeYourProfile,
+ .boxLogin{width: 95%;margin: 1.5rem auto;}
+}
+@media (max-width:512px) {
+}
+/* Full Address Section */
+.fullAddressSection{
+    margin: 30px 0;
+}
+.fullAddressSection .fx-fullAddress{gap: 1.5rem;}
+.fullAddressSection .titles{
+    gap: 0.5rem;
+    margin-bottom: 1.7rem;
+}
+.fullAddressSection .titles img{width: 40%;margin: auto;}
+.fullAddressSection .buttons{gap: 0.5rem;}
+.fullAddressSection .fx-fullAddress .divMap{
+    width: 50%;
+}
+.fullAddressSection .fx-fullAddress .divMap iframe{
+    height: 100%;
+}
+.fullAddressSection .fx-fullAddress .divDeliveryAddress{
+    width: 50%;
+}
+.fullAddressSection form .form__group{
+    margin-bottom: 30px;
+    gap: 20px;
+    border-radius: 20px;
+    border: 2px solid #EDEDED;
+    background: #FFF;
+    padding: 16px 24px;
+}
+.fullAddressSection .form__radio-input {
+	 display: none;
+}
+.fullAddressSection .form__radio-label {
+	 display: flex;
+	 justify-content: start;
+	 align-items: center;
+	 gap: 10px;
+	 cursor: pointer;
+}
+ .fullAddressSection .form__radio-button {
+	 height: 18px;
+	 width: 18px;
+	 border: 1px solid #6DA117;
+     background: #fff;
+	 border-radius: 50%;
+	 display: inline-block;
+	 position: absolute;
+	 transform: translateY(-2px);
+     right: 1rem;
+}
+.fullAddressSection .form__radio-button::after {
+	 content: "";
+	 display: block;
+	 height:8px;
+	 width:8px;
+	 position: absolute;
+	 border-radius: 50%;
+	 top: 50%;
+	 left: 50%;
+	 transition: opacity 0.1s;
+	 transform: translate(-50%, -50%);
+	 background-color: #6DA117;
+	 opacity: 0;
+}
+.fullAddressSection  .form__radio-input:checked + .form__radio-label .form__radio-button{
+    border: 1px solid #6DA117;
+     background: #fff;
+}
+.fullAddressSection  .form__radio-input:checked + .form__radio-label .form__radio-button:after {
+	 opacity: 1;
+}
+.fullAddressSection .locationRow{
+    padding-bottom: 20px;
+    position: relative;
+    padding-right: 3rem;
+    border-bottom: 1px solid #E1E0E0;
+}
+.fullAddressSection .locationRow:last-child{border-bottom: 0;padding-bottom: 0;}
+.fullAddressSection .buttons button{
+    background: rgba(53, 53, 53, 0.1);
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+.fullAddressSection h2{margin-bottom: 24px;}
+.fullAddressSection .listInputs{
+    margin-top: 24px;
+    width: 100%;
+    gap: 20px;
+}
+.fullAddressSection .listInputs .btnLinear-gradient{
+    margin-top: 10px;
+    width: 208px;
+    border-radius: 20px;
+}
+.fullAddressSection .w50{
+    flex: 1 1 calc(50% - 1.2rem);
+    max-width: calc(50% - 1.2rem);
+}
+.fullAddressSection .w100{
+    flex: 1 1 calc(100% - 1.2rem);
+    max-width: calc(100% - 0px);
+}
+.fullAddressSection form .form-group label{
+    display: block;
+    margin-bottom: 0.5rem;
+}
+.sectionLinks{margin-top: 30px;}
+.sectionLinks .fx-LinksTitle{gap: 1rem;}
+.sectionLinks a{
+    text-decoration: none;
+}
+@media (min-width:1706.67px) {
+    .fullAddressSection .listInputs .btnLinear-gradient{width: 230px;}
+}
+@media (min-width:1920px) {
+    .fullAddressSection .listInputs .btnLinear-gradient{width: max-content;}
+    .fullAddressSection .listInputs .btnLinear-gradient svg{width: 30px;height: 30px;}
+    .fullAddressSection .form__radio-button{
+        width: 24px;
+        height: 24px;
+    }
+    .fullAddressSection .form__radio-button::after{width: 12px;height: 12px;}
+    .fullAddressSection .form__radio-label h4{line-height: 30px;}
+    .fullAddressSection h2{margin-bottom: 30px;}
+    .fullAddressSection .listInputs{margin-top: 30px;}
+}
+
+@media (max-width:1228.8px) {
+    .fullAddressSection .listInputs .btnLinear-gradient{width: 170px;}
+}
+@media (max-width:1024px) {
+    .fullAddressSection .listInputs .btnLinear-gradient{width: 140px;}
+    .fullAddressSection h2{margin-bottom: 20px;}
+    .fullAddressSection .listInputs{margin-top: 20px;}
+    .fullAddressSection .buttons button svg{width: 15px;height: 15px;}
+    .fullAddressSection .buttons button{padding: 3px 5px;}
+    .fullAddressSection .fx-fullAddress{gap: 1rem;}
+}
+@media (max-width:877.71px) {
+    .fullAddressSection .listInputs .btnLinear-gradient{width: 120px;}
+}
+@media (max-width:614.4px) {
+    .fullAddressSection .listInputs .btnLinear-gradient{width: 140px;margin-top: 0px;}
+     .fullAddressSection .form__radio-label .fontSize20{font-size: 15px;}
+    .fullAddressSection form .form__group{padding: 16px;}
+    .fullAddressSection h2{margin-bottom: 16px;}
+    .fullAddressSection .listInputs{margin-top: 16px;}
+    .fullAddressSection .w50{
+        flex: 1 1 calc(100% - 1.2rem);
+        max-width: calc(100% - 1.2rem);
+    }
+    .fullAddressSection .titles{width: 100%;margin-bottom: 1.5rem;}
+    .fullAddressSection .locationRow{padding-right: 2rem;}
+    .fullAddressSection .form__radio-button{right: 0rem;}
+    .fullAddressSection .buttons button svg{width: 15px;height: 15px;}
+    .fullAddressSection .buttons button{padding: 5px 7px;}
+    .fullAddressSection .form-group{gap: 7px;}
+    .locationSvg{width: 20px;height: 20px;}
+    .fullAddressSection .form__radio-label{gap: 10px;}
+    .fullAddressSection .fx-fullAddress{flex-direction: column;}
+    .fullAddressSection .fx-fullAddress .divMap{width: 100%;}
+   .fullAddressSection .fx-fullAddress .divDeliveryAddress{width: 100%;}
+}
+/* OTP Modal  */
+.authModal{
+    padding:2rem 1.5rem;
+    width: 35%;   
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    overflow-y: scroll;
+    z-index: 9999;
+    background: #FFF;
+    border-radius: 20px;
+}
+.authModal .fx-authModal{gap: 20px;}
+.otpModal .p-haed{margin: 1.2rem 0;}
+.otpModal .phoneNumber{margin-bottom: 32px; display: block;}
+.otpModal .otp-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    width: 70%;
+    margin: auto;
+}
+.otpModal .otp-container .otp-input {
+    width: 25%;
+    height: 59.876px;
+    text-align: center;
+    font-size: 26px;
+    border-radius: 10px;
+    border: 1px solid #DEDEDE;
+    background: #FFF;
+    padding: 0;
+}
+.otpModal .otp-container .otp-input:focus {
+    border-radius: 10px;
+    border: 3px solid #6AA632;
+    background: #FFF;
+    outline: none;
+}
+.otpModal .btnLinear-gradient{
+border-radius: 43px;
+background: linear-gradient(90deg, var(--Color4, #6AA632) 0.22%, var(--Color5, #B9DE60) 103.8%);
+margin: 1.2rem 0;
+}
+.otpModal .dontReceiveOTP{margin-top: 24px;}
+.otpModal .dontReceiveOTP,
+.otpModal .resendCode{font-size: 14px;}
+.otpModal .authModal-texts .titles{
+    width: 70%;
+    margin: auto;
+}

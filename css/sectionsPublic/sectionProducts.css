@@ -145,12 +145,7 @@
   opacity: 0.3;
 }
 .productCard .productCard-Details .fxProduct-price{gap: 5px;}
-.productCard .productCard-Details .fxProduct-price p{
-  color: #989898;
-  font-size: 14px;
-  letter-spacing: -0.333px;
-  text-decoration-line:line-through;
-}
+
 .productCard .productCard-Details .btnShoppingCart{
   border-radius: 5px;
   background: #F9F9F9;
@@ -178,7 +173,6 @@
 }
 .modalProducts .modal-content .productCard .productCard-title{gap: 8px;align-items: start;}
 @media (min-width:1706.67px) {
-  .productCard .productCard-Details .fxProduct-price p{font-size: 16px;}
   .fxProducts{gap: 23px;}
   .productCard .productCard-Details .fxAddToCart button img{width: 30px;}
   .productCard .productCard-Details .fxAddToCart span{font-size: 16px;}
@@ -195,7 +189,6 @@
 @media (min-width:1920px) {
   .productCard .productCard-Details .fxAddToCart button img{width: 35px;}
   .productCard .productCard-Details .fxAddToCart span{font-size: 20px;}
-  .productCard .productCard-Details .fxProduct-price p{font-size: 19px;}
   .fxProducts{gap: 25px;}
   .productCard .productCard-imgs .favouriteIcon,
   .productCard .eye-icon svg{width: 30px;height: 30px;}
@@ -212,7 +205,6 @@
 @media (min-width:2048px) {
   .productCard .productCard-Details .fxAddToCart button img{width: 40px;}
   .productCard .productCard-Details .fxAddToCart span{font-size: 23px;}
-  .productCard .productCard-Details .fxProduct-price p{font-size: 20px;}
   .fxProducts{gap: 28px;}
   .fxProducts .productCard {flex: 1 1 calc(25% - 28px);}
   .fxProducts .divBanner{
@@ -221,10 +213,8 @@
   }
 }
 @media (max-width:1396.36px) {
-  .productCard .productCard-Details .fxProduct-price p{font-size: 13px;}
 }
 @media (max-width:1228.8px) {
-  .productCard .productCard-Details .fxProduct-price p{font-size: 12px;}
   .productCard .productCard-Details .fxAddToCart button img{width: 20px;}
   .productCard .eye-icon{top: 2.7rem;}
   .productCard .productCard-imgs .favouriteIcon,
@@ -275,7 +265,7 @@
   .fxProducts .divBanner{
     flex: 1 1 calc(100% - 1rem);
     max-width: calc(100% - 0px);
-
+    
   }
   .productCard .productCard-Details{gap: 0.7rem;padding: 0 1rem;}
   .productCard{height: 100%;}
