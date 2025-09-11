@@ -171,7 +171,6 @@
 .productCard .productCard-Details .fxAddToCart button:hover{
   transform: scale(0.9);
 }
-.modalProducts .modal-content .productCard .productCard-title{gap: 8px;align-items: start;}
 @media (min-width:1706.67px) {
   .fxProducts{gap: 23px;}
   .productCard .productCard-Details .fxAddToCart button img{width: 30px;}

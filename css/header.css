@@ -43,7 +43,7 @@
 .navbar .navbarPart2{background:  #fff;padding: 10px 16px;}
 .navbar .navbarPart2 .karootoLogo img{width: 130px;height: 100%;}
 .navbar .navbarPart2 .divLocation .btnLocation{gap: 0.7rem;}
-.navbar .navbarPart2 .divLocation .btnLocation span{font-size: 10px;}
+.divLocation .btnLocation span{font-size: 10px;}
 .navbar .navbarPart2 .divLocation .itemLocation p{font-size: 8px;}
 .navbar .navbarPart2 .divLocation .itemLocation img{width: 20px;}
 .navbar .navbarPart2 .divLocation .itemLocation{padding: 0;}
@@ -189,7 +189,7 @@ header .header-part2{
 .divLocation{position: relative;}
 .divLocation .btnLocation{
   display: flex;
-  gap: 1rem;align-items: end;
+  gap: 0.5rem;align-items: end;
   cursor: pointer;transition: 0.3s;
   position: relative;
   padding-right: 11px;
@@ -202,10 +202,10 @@ header .header-part2{
 .divLocation .btnLocation img{padding-bottom: 4px;}
 .divLocation .btnLocation p{
   letter-spacing: -0.333px;
+  font-size: 13px;
 }
 .divLocation .btnLocation span{
   color: #BABABA;
-  font-size: 15px;
   letter-spacing: -0.333px;
   display: block;
   margin-bottom: 6px;
@@ -246,24 +246,26 @@ header .header-part2  .divLocation .itemLocation p,
 }
 header .header-part2  .divLocation .itemLocation p{color: #8E8E8E;}
 .divLocation .addAddress{
-  border-radius: 10px;
-  border: 1px dashed  #6DA117;
-  background: #F9F9F9;
+  border-radius: 20px;
+  background: linear-gradient(89deg, var(--Color4, #6AA632) 10.1%, var(--Color5, #B9DE60) 117.68%);
   display: flex;
   gap: 5px;
   align-items: center;
   justify-content: center;
   height: 36px;
   transition: 0.3s;
+  width: 100%;
 }
 .divLocation .addAddress span{
-  color:  #6DA117;
+  color:  #fff;
   font-size: 10px;
   letter-spacing: -0.333px;
 }
 .divLocation .addAddress:hover{
-  transform: scale(0.95);
-  background-color: #f7fbf1;
+  transform: scale(0.97);
+}
+.divLocation .addAddress img{
+  filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(93deg) brightness(103%) contrast(103%);
 }
 header .header-part2 .HeaderLocation .location-list{
   display: none;
@@ -707,6 +709,8 @@ header .header-part3 .linksHeader a.active::after {
   header .header-part2 .headerlLinksIcons .btnIcon svg{width: 20px;height: 20px;}
   .icon-notification .listNotifications{width: 280px;padding: 12px;gap: 8px;min-height: 250px;}
   .icon-notification .boxPublic .cancelIcon{width: 18px;height: 18px;}
+  .divLocation .btnLocation p{font-size: 11px;}
+    .divLocation .btnLocation span{font-size: 8px;}
 }
 @media (max-width:877.71px) {
   header .header-part1 .header-icons img{width: 30px;}
