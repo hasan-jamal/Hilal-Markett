@@ -620,6 +620,8 @@ border-radius: 0px 0px 10px 10px;
     position: absolute;
     z-index: 99;
     width: 100%;
+    height: 13vh;
+    overflow-y: auto;
     top: 80%;
     gap: 10px;
 }

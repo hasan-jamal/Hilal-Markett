@@ -126,6 +126,8 @@
   justify-content: center;
   align-items: center;
 }
+.productCard .eye-icon svg,
+.productCard .toggle-icon svg{width: 17px;height:17px;}
 .productCard .productCard-imgs .productImage{width: 100%;height: 100%;}
 .productCard .productCard-imgs .productImage img{
   object-fit: contain;
@@ -139,7 +141,6 @@
   margin-top: auto;
   gap: 8px;
 }
-.productCard .productCard-Details p{font-size: 20px;}
 .productCard .productCard-Details .mount{
   color: #000;
   opacity: 0.3;
@@ -182,7 +183,7 @@
   }
   .productCard .productCard-Details .btnShoppingCart{padding: 10px 15px;}
   .productCard .productCard-imgs .favouriteIcon,
-   .productCard .eye-icon svg svg{width: 25px;height: 25px;}
+   .productCard .eye-icon svg{width: 25px;height: 25px;}
     .productCard .eye-icon{top:21%}
 }
 @media (min-width:1920px) {
@@ -190,7 +191,8 @@
   .productCard .productCard-Details .fxAddToCart span{font-size: 20px;}
   .fxProducts{gap: 25px;}
   .productCard .productCard-imgs .favouriteIcon,
-  .productCard .eye-icon svg{width: 30px;height: 30px;}
+  .productCard .eye-icon svg,
+  .productCard .toggle-icon svg{width: 22px;height: 22px;}
   .productCard .eye-icon,
   .productCard .toggle-icon{padding: 10px;}
 
@@ -210,6 +212,8 @@
     flex: 1 1 calc(25% - 28px);
     max-width: calc(25.35% - 0px);
   }
+  .productCard .eye-icon svg,
+  .productCard .toggle-icon svg{width: 25px;height: 25px;}
 }
 @media (max-width:1396.36px) {
 }
@@ -217,8 +221,8 @@
   .productCard .productCard-Details .fxAddToCart button img{width: 20px;}
   .productCard .eye-icon{top: 2.7rem;}
   .productCard .productCard-imgs .favouriteIcon,
-   .productCard .eye-icon svg{width: 15px;height: 15px;}
-
+   .productCard .eye-icon svg,
+   .productCard .toggle-icon svg{width: 15px;height: 15px;}
 }
 @media (max-width:1024px) {
   .fxProducts{gap: 1rem;}
@@ -226,6 +230,7 @@
     flex: 1 1 calc(33.3% - 1rem);
     max-width: calc(33.3% - 0px);
   }
+  .productCard .toggle-icon svg{width: 13px;height: 13px;}
 }
 @media (max-width:877.71px) {
   .fxProducts{gap: 8px;}
