@@ -247,6 +247,13 @@ padding:0.5rem 1rem;
     display: none;
     margin-top: 10px;
   }
+  .fxNamesFilter{
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+    row-gap: 12px;
+}
+.fxNamesFilter button span{color: #555;}
 @media (min-width:1920px) {
     .filterProducts .filter .btnGreenFilter{padding: 1rem 2.5rem;}
     .filterProducts .filter .btnGreenFilter svg{width: 30px;height: 30px;}
@@ -267,7 +274,8 @@ padding:0.5rem 1rem;
 @media (max-width:1228.8px) {
  .filterProducts .filter .list-checkbox{gap: 10px;}
  .filter .checkbox-group label{gap: 7px;}
-      .filterProducts .filter .btnGreenFilter{padding: 10px 20px;}
+  .filterProducts .filter .btnGreenFilter{padding: 10px 20px;}
+  .fxNamesFilter{gap: 1rem;}
 }
 @media (max-width:1024px) {
   .filterProducts .products .fxProducts{margin-top: 28px;}
@@ -286,10 +294,12 @@ padding:0.5rem 1rem;
     .filterProducts .products .fx-sorting .btnSort{padding: 5px;}
     .fx-filterProducts .divBanner img{border-radius: 10px;}
     .filterProducts .products .fxProducts,
-      .filterProducts .divBanner{margin-top: 1rem;}
+  .filterProducts .divBanner{margin-top: 1rem;}
+    .fxNamesFilter{gap: 12px;}
 }
 @media (max-width:614.4px) {
-
+  .fxNamesFilter{margin-bottom: 1rem;}
+  .fxNamesFilter button svg{width: 1rem;}
   .filterProducts .filter{
     position: fixed;
     top: 0;
