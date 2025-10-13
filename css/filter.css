@@ -1,9 +1,9 @@
 .filterProducts{margin: 40px 0;}
-.filterProducts .fx-filterProducts{gap: 32px;}
+.filterProducts .fx-filterProducts{gap: 1rem;}
 .filterProducts .filter{
     display: flex;
     gap: 1.5rem;
-    width: 25%;
+    width: 22%;
 }
 .filterProducts .fxHead-Filter{
   gap: 5px;
@@ -124,8 +124,11 @@ padding:0.5rem 1rem;
   padding: 10px 18px;
 }
 /* Side Products */
-
-.filterProducts .products{width: 75%;}
+.filterProducts .fxProducts .productCard {
+    flex: 1 1 calc(20% - 0.5rem);
+    max-width: calc(20% - 0px);
+}
+.filterProducts .products{width: 78%;}
 .filterProducts .products .fx-pages{
   justify-content: space-between;
   align-items: center
@@ -276,19 +279,27 @@ padding:0.5rem 1rem;
  .filter .checkbox-group label{gap: 7px;}
   .filterProducts .filter .btnGreenFilter{padding: 10px 20px;}
   .fxNamesFilter{gap: 1rem;}
+    .filterProducts .fxProducts .productCard {
+      flex: 1 1 calc(25% - 0.5rem);
+      max-width: calc(25% - 0px);
+  }
 }
 @media (max-width:1024px) {
   .filterProducts .products .fxProducts{margin-top: 28px;}
   .filterProducts .fxHead-Filter{margin-bottom: 1rem;}
 }
 @media (max-width:877.71px) {
-    .filterProducts .products .fxProducts{margin-top: 20px;}
+    .filterProducts .products .fxProducts{margin-top: 20px;gap: 0.5rem !important;}
     .filterProducts .products .fx-sorting .btnSort svg{width: 13px;height: 13px;}
     .filterProducts .products .fx-sorting .btnSort{padding: 8px;}
     .filterProducts .fxHead-Filter{margin-bottom: 0.8rem;}
     .fx-filterProducts .divBanner img{border-radius: 15px;}
     .filterProducts .products .fxProducts,
-      .filterProducts .divBanner{margin-top: 20px;}
+    .filterProducts .divBanner{margin-top: 20px;}
+    .filterProducts .fxProducts .productCard {
+      flex: 1 1 calc(33.3% - 0.5rem);
+      max-width: calc(33.3% - 0px);
+  }
 }
 @media (max-width:768px ) {
     .filterProducts .products .fx-sorting .btnSort{padding: 5px;}
@@ -331,6 +342,11 @@ padding:0.5rem 1rem;
   .filterProducts .filter .btnGreenFilter{display: none !important;}
   .btnCloseFilter{display: flex;}
   .filterProducts .fxHead-Filter svg{width: 13px;height: 13px;}
+  .filterProducts .fxProducts .productCard {
+      flex: 1 1 calc(50% - 0.5rem);
+      max-width: calc(50% - 0px);
+      padding: 0px;
+  }
 }
 @media (max-width:512px) {
 }

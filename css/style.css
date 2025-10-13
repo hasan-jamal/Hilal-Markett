@@ -116,11 +116,11 @@
     padding: 50px 0 70px 0;
     background: #F7F7F7;
 }
-.featuredProducts .divBanner{
+.featuredProducts .divBannerfeatured{
     flex: 1 1 calc(25% - 20px);
     max-width: calc(25% - 0px);
 }
-.featuredProducts .divBanner img{width: 100%;object-fit: cover;border-radius: 20px;}
+.featuredProducts .divBannerfeatured img{width: 100%;object-fit: cover;border-radius: 20px;}
 .featuredProducts .titles{margin-bottom: 30px;gap: 10px;}
 .featuredProducts .fxProducts{margin-bottom: 50px;}
 .featuredProducts .listProducts{
@@ -187,7 +187,7 @@
         max-width: calc(25% - 0px);
         gap: 20px;
     }
-    .featuredProducts .divBanner{
+    .featuredProducts .divBannerfeatured{
         flex: 1 1 calc(25% - 28px);
         max-width: calc(25% - 0px);
     }
@@ -236,7 +236,7 @@
         flex: 1 1 calc(100% - 1rem);
         max-width: calc(100.35% - 0px);
     }
-    .featuredProducts .divBanner{
+    .featuredProducts .divBannerfeatured{
         flex: 1 1 calc(100% - 1rem);
         max-width: calc(100% - 0px);
     }
@@ -318,3 +318,70 @@
 @media (max-width:512px) {
 }
 /* Section Folow Us 2 Style */
+.sectionCategories h1{margin-bottom: 1.6rem;}
+.sectionCategories .fxGeneral-cards{gap: 1rem;}
+.item-category{
+    border-radius: 5px;
+    background: #F5F5F5;
+    padding: 20px 1rem;
+    text-decoration: none;
+    gap: 1.6rem;
+    flex: 1 1 calc(16.6% - 1rem);
+    max-width: calc(16.6% - 1rem);
+}
+.item-category:hover{background:#e1e1e1 ;}
+@media (min-width:1706.67px) {
+
+}
+@media (min-width:1920px) {
+
+}
+@media (min-width:2048px) {
+
+}
+@media (min-width:2304px) {
+
+}
+@media (min-width:3072px) {
+
+}
+@media (max-width:1396.36px) {
+    .item-category{gap: 1rem;}
+}
+@media (max-width:1228.8px) {
+
+}
+@media (max-width:1024px) {
+    .item-category{
+        padding: 0.9rem 1rem;
+        flex: 1 1 calc(20% - 1rem);
+        max-width: calc(20% - 1rem);
+    }
+    .item-category img{width: 80px;}
+    .sectionCategories h1 {margin-bottom: 1rem;}
+}
+@media (max-width:877.71px) {
+   .item-category{
+        padding: 0.5rem;
+        flex: 1 1 calc(16.6% - 1rem);
+        max-width: calc(16.6% - 1rem);
+    }
+    .item-category img{width: 60px;}
+}
+@media (max-width:768px) {
+   .item-category{
+        padding: 0.5rem;
+        flex: 1 1 calc(20% - 1rem);
+        max-width: calc(20% - 1rem);
+    }
+}
+@media (max-width:614.4px) {
+    .sectionCategories .fxGeneral-cards{gap: 0.5rem;}
+   .item-category{
+        padding: 0.5rem;
+        flex: 1 1 calc(33.3% - 0.5rem);
+        max-width: calc(33.3% - 0.5rem);
+    }
+}
+@media (max-width:512px) {
+}

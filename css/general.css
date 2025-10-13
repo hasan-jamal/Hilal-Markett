@@ -97,12 +97,12 @@ p,button,a{font-size: 1rem;}.text-center{text-align: center;}.mb-0{margin-bottom
     .mb60{margin-bottom: 1.5rem;}
 }
 @media (max-width:768px) {
-    .px-80{padding: 0 20px;}
-    .px-110{padding: 0 20px;}
-    .px-100{padding: 0 20px;}
-    .px-90{padding: 0 20px;}
-    .px-130{padding: 0 20px;}
-    .px-175{padding: 0 20px;}
+    .px-80{padding: 0 1rem;}
+    .px-110{padding: 0 1rem;}
+    .px-100{padding: 0 1rem;}
+    .px-90{padding: 0 1rem;}
+    .px-130{padding: 0 1rem;}
+    .px-175{padding: 0 1rem;}
 }
 /* Animations */
 .transition3s{transition: all 0.3s ease;}
@@ -721,6 +721,7 @@ iframe{
     text-decoration-thickness: 12%;
     text-underline-offset: auto;
     text-underline-position: from-font;
+    cursor: pointer;
 }
   .clearShoppingCart{
     color: #A52A2A;
