@@ -77,6 +77,7 @@
    right: -1.5rem;
 }
 @media (max-width:614.4px) {
+    .sectionSliderBanner {margin: 1.3rem 0;}
     .sectionSliderBanner .dots-SliderBanner{padding: 5px 10px;}
     .sectionSliderBanner .dots-SliderBanner:after{bottom: -6px;}
     .sectionSliderBanner .dots-SliderBanner::before{
@@ -92,6 +93,7 @@
     .sectionSliderBanner .arrows-sliderBanner .prevBanner{left: -1rem;}
     .sectionSliderBanner .arrows-sliderBanner button{top: 0px;}
    .sectionSliderBanner .arrows-sliderBanner button svg{width: 20px;height: 20px;}
+     .sectionSliderBanner .slide img {object-fit: fill;aspect-ratio: 10 / 4;}
 }
 /* Section Banners Style */
 .sectionBanners{margin-bottom: 70px;}
@@ -109,6 +111,7 @@
         flex: 1 1 calc(100% - 0.5rem);
         max-width: calc(100% - 0px);
     }
+  
 }
 /* End Section Banners Style */
 /* Section Featured Products Style */
@@ -382,6 +385,7 @@
         flex: 1 1 calc(33.3% - 0.5rem);
         max-width: calc(33.3% - 0.5rem);
     }
+
 }
 @media (max-width:512px) {
 }

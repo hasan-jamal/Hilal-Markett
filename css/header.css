@@ -635,9 +635,7 @@ header .header-part3 .linksHeader a.active::after {
     .divBrowse .listBrowse .boxCategory{padding: 1rem 1.5rem;}
     .divBrowse .btnBrowse{height: 60px;}
     .productItem .eye-icon svg,
-    .productItem .toggle-icon svg{
-          width: 30px;height: 30px;
-    }   
+    .productItem .toggle-icon svg{ width: 30px;height: 30px;}   
 }
 @media (min-width:1920px) {
   .divBrowse .listBrowse{height: 400px;}
