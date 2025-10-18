@@ -184,6 +184,22 @@
       filter: brightness(0) saturate(100%) invert(99%) sepia(0%) saturate(7500%) hue-rotate(74deg) brightness(107%) contrast(101%);
 }
 .productItem .shoppingCart-icon{background: #6AA632;}
+.productItem .normal-state {display: flex;}
+.productItem .active-state {
+  display: none;
+}
+.productItem.active .normal-state,
+.productItem:hover .normal-state {
+  display: none;
+}
+.productItem.active .active-state,
+.productItem:hover .active-state {
+  display: flex;
+}
+.productItem {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 @media (min-width:2048px) {
     .featuredProducts .listProducts{
         flex: 1 1 calc(25% - 28px);
