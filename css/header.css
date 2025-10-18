@@ -40,9 +40,10 @@
 }
 .navbar .navbarPart1 .header-contact a{
   padding-right: 5px;
-  font-size: 8px;
+  font-size: 10px;
   white-space: nowrap
 }
+.navbar .navbarPart1 .header-contact a span{font-size: 11px;}
 .navbar .navbarPart1 .header-contact p{line-height: 140%;font-size: 8px;}
 .navbar .navbarPart1 .header-icons a img{width: 80%;}
 .navbar .navbarPart2{background:  #fff;padding: 10px 16px;}
@@ -154,6 +155,35 @@
   font-size: 14px;
   text-decoration: none;
   letter-spacing: -0.333px;
+}
+.tabsNavbar {
+  background: #FFF;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: none;
+}
+.tabsNavbar .tabsContainer{
+  padding: 0.7rem 1rem 0.5rem 1rem;
+  gap:1rem; 
+}
+.tabsNavbar .tabsContainer .activeTab{
+  border-radius: 100px;
+  background: rgba(106, 166, 50, 0.12);
+  padding: 8px 12px;
+  gap: 4px;
+}
+.tabsNavbar .boxTab{text-decoration: none;}
+.tabsNavbar .boxTab span{display: none;}
+.tabsNavbar .tabsContainer .activeTab span{display: block;}
+.tabsNavbar .boxTab svg{
+  filter: brightness(0) saturate(100%) invert(13%) sepia(13%) saturate(1356%) hue-rotate(182deg) brightness(93%) contrast(91%);
+}
+.tabsNavbar .tabsContainer .activeTab svg{
+  filter: brightness(0) saturate(100%) invert(57%) sepia(8%) saturate(3956%) hue-rotate(48deg) brightness(102%) contrast(74%);
 }
 /* Header */
 header{
@@ -784,6 +814,8 @@ header .header-part3 .linksHeader a.active::after {
     top: -2px;
   }
   .navbar .navbarPart1 .header-contact a{padding-right: 10px;}
+  .navbar .headerlLinksIcons{display: none;}
+  .tabsNavbar{display: block;}
 }
 @media (max-width:512px) {
 }

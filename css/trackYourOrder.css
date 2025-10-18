@@ -76,6 +76,9 @@
     flex: 1 1 calc(100% - 10px);
     max-width: calc(100% - 0px);
 }
+.deliveryDetails .box-deliveryDetails .contact-trackOrder a{
+    padding: 0 0.5rem;
+}
 .trackYourOrder .divTable{
     margin-top: 30px;
 }
@@ -164,11 +167,12 @@
     .deliveryDetails h3{margin-top: 16px;}
     .deliveryDetails .box-deliveryDetails,
     .orderStatus .box-orderStatus{padding: 16px;margin-top: 16px;}
+    .deliveryDetails .box-deliveryDetails{gap: 0.5rem;}
     .orderStatus .box-orderStatus .step-orderStatus h3,
     .orderStatus .box-orderStatus .step-orderStatus img{margin-bottom: 8px;}
     .deliveryDetails .userDetails .userImage{width: 60px;height: 60px;}
-    .deliveryDetails .userDetails{gap: 12px;}
-    .deliveryDetails .userDetails h2,
+    .deliveryDetails .userDetails{gap: 12px;width: 100%;}
+    .deliveryDetails .box-deliveryDetails .contact-trackOrder a{padding: 0;}
     .orderStatus .box-orderStatus .step-orderStatus img{width: 40px;}
     .deliveryDetails .box-deliveryDetails  .userInformation .w28{
         flex: 1 1 calc(100% - 10px);
@@ -278,6 +282,7 @@
     .cancelOrderModal button{height: 40px;font-size: 13px;}
     .cancelOrderModal .fxButtons button{font-size: 12px;height: 42px;}
     .cancelOrderModal img {width: 90px;height: 90px;}
+    
 }
 @media (max-width:512px) {
 }
