@@ -17,6 +17,7 @@
     align-items: center;
     transition: background 0.2s ease, transform 0.2s ease;
 }
+.userPage .tabsList .myFavorites{display: none;}
 .userPage .tabsList .tabButton svg{
   filter: brightness(0) saturate(100%) invert(98%) sepia(2%) saturate(56%) hue-rotate(314deg) brightness(85%) contrast(92%);
 }
@@ -119,7 +120,7 @@
     #tabsListSide .tabButton span{font-size: 15px;}
     .fxHead-btns button{display: flex;}
     .fxHead-btns h2{font-size: 20px;}
- 
+ .userPage .tabsList .myFavorites{display:flex;}
 }
 @media (max-width:512px) {
 }
