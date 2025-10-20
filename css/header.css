@@ -782,11 +782,6 @@ header .header-part3 .linksHeader a.active::after {
   
 }
 @media (max-width:614.40px) {
-  .icon-notification .listNotifications{
-    left: 10%;
-    width: 220px;
-    transform: translateX(-90%);
-  }
   header{display: none;}
   .navbar{display: block;}
   .navbar .navbarPart2 .divLocation .itemLocation{padding: 5px;}
@@ -794,12 +789,18 @@ header .header-part3 .linksHeader a.active::after {
   .headerlLinksIcons{padding: 0.8rem 20px;}
   .headerlLinksIcons .btnIcon svg{width: 25px;height: 25px;}
   .headerlLinksIcons .icon-profile button svg{width: 30px;height: 30px;}
-  .icon-notification .numberNotification, .headerlLinksIcons a .numberItem{font-size: 9px;top: -14px;}
+  .icon-notification .numberNotification, .headerlLinksIcons a .numberItem{font-size: 9px;top: -11px;}
   .icon-profile .boxPublic .headBox .divImage,
   .icon-notification .boxPublic .headBox .divImage{padding: 5px;}
  .icon-profile .boxPublic .headBox .divImage,
   .icon-notification .boxPublic .headBox .divImage{width: 25px;height: 25px;}
-  .icon-notification .listNotifications{left: -1rem;transform: translateX(0);width: 280px;border-radius: 0 0 20px 20px;}
+  .icon-notification .listNotifications{
+    left: auto;
+    right: 0;
+    transform: translateX(0);
+    width: 280px;
+    border-radius: 0 0 20px 20px;
+  }
   .divBrowse{width: 100%;border-bottom: 1px solid rgba(229, 231, 235, 1);}
   .divBrowse .btnBrowse{width: 90%;margin: auto;height: 50px;}
   .divBrowse .btnBrowse span{color: #030712; font-weight: 600;font-size: 14px;}
